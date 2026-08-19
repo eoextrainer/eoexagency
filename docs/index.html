@@ -61,6 +61,26 @@
         var isLocalHost = /^(localhost|127\.0\.0\.1|::1)$/.test(window.location.hostname);
         if (!isLocalHost) {
           document.documentElement.classList.add('hide-kiosk-public');
+
+          function removeKiosk() {
+            var kiosk = document.getElementById('kiosk');
+            if (kiosk) {
+              kiosk.remove();
+              return true;
+            }
+            return false;
+          }
+
+          if (!removeKiosk()) {
+            var observer = new MutationObserver(function () {
+              if (removeKiosk()) {
+                observer.disconnect();
+              }
+            });
+
+            observer.observe(document.documentElement, { childList: true, subtree: true });
+            window.addEventListener('load', removeKiosk, { once: true });
+          }
         }
       }());
     </script>
