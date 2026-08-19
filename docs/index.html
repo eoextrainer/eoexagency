@@ -52,7 +52,18 @@
         color: #1a1a1a;
         font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
       }
+      html.hide-kiosk-public #kiosk {
+        display: none !important;
+      }
     </style>
+    <script>
+      (function () {
+        var isLocalHost = /^(localhost|127\.0\.0\.1|::1)$/.test(window.location.hostname);
+        if (!isLocalHost) {
+          document.documentElement.classList.add('hide-kiosk-public');
+        }
+      }());
+    </script>
     <script type="module" crossorigin src="/eoexagency/assets/index-NXfA78x0.js"></script>
     <link rel="stylesheet" crossorigin href="/eoexagency/assets/index-DuhcxzjZ.css">
   </head>
