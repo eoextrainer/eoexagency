@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EOEX Agency - Roster de mannequins, showcases et disponibilites.">
+  <title>EOEX Agency | Roster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css?v=1">
+  <link rel="stylesheet" href="assets/css/models.css?v=1">
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="a11y.skip">Aller au contenu principal</a>
+
+  <header class="site-header" id="home">
+    <nav class="top-nav" aria-label="Navigation principale">
+      <a href="/eoexagency/" class="brand brand-with-logo" aria-label="EOEX Agency">
+        <img
+          class="brand-logo js-hover-logo"
+          src="/eoexagency/gallery/logo/2.png"
+          data-logo-default="/eoexagency/gallery/logo/2.png"
+          data-logo-hover="/eoexagency/gallery/logo/1.png"
+          alt="EOEX logo"
+        >
+        <span class="brand-tagline">The Elegance of Excellence</span>
+      </a>
+
+      <div class="language-banner" aria-label="Selection de langue">
+        <span>Language</span>
+        <label for="lang-select" class="sr-only" data-i18n="nav.languageLabel">Langue</label>
+        <select id="lang-select" name="lang-select">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="it">IT</option>
+          <option value="pt">PT</option>
+          <option value="de">DE</option>
+        </select>
+      </div>
+
+      <button class="hamburger" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-i18n-aria-label="nav.toggleAria">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/eoexagency/">Home</a></li>
+        <li><a href="/eoexagency/#about">About</a></li>
+        <li><a href="/eoexagency/#masterclasses">Masterclasses</a></li>
+        <li><a href="/eoexagency/#gallery">Gallery</a></li>
+        <li><a href="/eoexagency/#testimonials">Testimonials</a></li>
+        <li><a href="/eoexagency/#news">News</a></li>
+        <li><a href="/eoexagency/#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero shell" aria-label="Hero carousel video">
+      <div class="hero-headline">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Direction artistique et precision runway</p>
+        <h1 data-i18n="hero.title">Le roster EOEX, pense pour la scene mondiale</h1>
+        <p data-i18n="hero.subtitle">Casting rapide, profils verifies, disponibilites claires.</p>
+      </div>
+      <div class="hero-carousel" id="hero-carousel" aria-roledescription="carousel">
+        <button class="carousel-btn prev" data-carousel="hero" data-dir="prev" aria-label="Previous slide">&#10094;</button>
+        <div class="hero-track" id="hero-track"></div>
+        <button class="carousel-btn next" data-carousel="hero" data-dir="next" aria-label="Next slide">&#10095;</button>
+        <div class="hero-controls">
+          <button id="hero-play-toggle" class="ghost-btn" type="button" data-i18n="hero.pause">Pause</button>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main id="main-content">
+    <section id="talent-gallery" class="section shell">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="gallery.eyebrow">Talent gallery</p>
+        <h2 data-i18n="gallery.title">Profils du moment</h2>
+      </div>
+      <div id="model-grid" class="model-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="showcase" class="section shell">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="showcase.eyebrow">Showcase</p>
+        <h2 data-i18n="showcase.title">Trois univers, une signature</h2>
+      </div>
+      <div id="showcase-lanes" class="showcase-lanes"></div>
+    </section>
+
+    <section id="calendar" class="section shell">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="calendar.eyebrow">Calendrier</p>
+        <h2 data-i18n="calendar.title">Disponibilites du mois en cours</h2>
+      </div>
+      <div class="calendar-grid" id="calendar-grid"></div>
+    </section>
+
+    <section id="contact" class="section shell">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contact us</p>
+        <h2 data-i18n="contact.title">Parlons de votre prochain casting</h2>
+      </div>
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="field-row">
+          <label for="name" data-i18n="contact.form.name">Nom complet</label>
+          <input id="name" name="name" type="text" required minlength="2" autocomplete="name">
+          <p class="error-msg" id="name-error"></p>
+        </div>
+        <div class="field-row">
+          <label for="email" data-i18n="contact.form.email">Email professionnel</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+          <p class="error-msg" id="email-error"></p>
+        </div>
+        <div class="field-row">
+          <label for="project" data-i18n="contact.form.project">Type de projet</label>
+          <select id="project" name="project" required>
+            <option value="" data-i18n="contact.form.projectPlaceholder">Selectionner</option>
+            <option value="runway" data-i18n="showcase.runway">Runway</option>
+            <option value="editorial" data-i18n="showcase.editorial">Editorial</option>
+            <option value="commercial" data-i18n="showcase.commercial">Commercial</option>
+          </select>
+          <p class="error-msg" id="project-error"></p>
+        </div>
+        <div class="field-row">
+          <label for="message" data-i18n="contact.form.message">Brief</label>
+          <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+          <p class="error-msg" id="message-error"></p>
+        </div>
+        <button type="submit" class="solid-btn" data-i18n="contact.form.submit">Envoyer</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="shell footer-wrap">
+      <div>
+        <h3>EOEX Agency</h3>
+        <p data-i18n="footer.tagline">Management de talents mode, beaute et image.</p>
+      </div>
+      <div>
+        <p><strong data-i18n="footer.addressLabel">Adresse</strong></p>
+        <p>Paris, France</p>
+      </div>
+      <div>
+        <p><strong data-i18n="footer.links">Liens</strong></p>
+        <p><a href="#contact" data-i18n="footer.contact">Contact</a></p>
+        <p><a href="#talent-gallery" data-i18n="global.nav.gallery">Gallery</a></p>
+        <p><a href="https://github.com/eoextrainer/eoexagency" target="_blank" rel="noopener">GitHub</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="model-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content" role="dialog" aria-modal="true" aria-label="Model details">
+      <button type="button" class="modal-close" data-close>&times;</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script type="module" src="assets/js/models-loader.js?v=1"></script>
+  <script src="assets/js/model-modal.js"></script>
+  <script>
+    const brandLogos = document.querySelectorAll('.js-hover-logo');
+    brandLogos.forEach((logo) => {
+      const defaultSrc = logo.dataset.logoDefault;
+      const hoverSrc = logo.dataset.logoHover;
+      if (!defaultSrc || !hoverSrc) return;
+
+      logo.addEventListener('mouseenter', () => {
+        logo.src = hoverSrc;
+      });
+      logo.addEventListener('mouseleave', () => {
+        logo.src = defaultSrc;
+      });
+      logo.addEventListener('focus', () => {
+        logo.src = hoverSrc;
+      });
+      logo.addEventListener('blur', () => {
+        logo.src = defaultSrc;
+      });
+    });
+  </script>
+</body>
+</html>

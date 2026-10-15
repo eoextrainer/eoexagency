@@ -1,0 +1,60 @@
+[
+  {
+    "id": "f-001",
+    "name": "Albina",
+    "gender": "female",
+    "height": "",
+    "shoulders": "",
+    "bust": "",
+    "waist": "",
+    "hips": "",
+    "shoes": "",
+    "hair": "",
+    "eyes": "",
+    "dressSize": "",
+    "featured": false,
+    "location": "Paris, FR",
+    "basePath": "models/female/f-001",
+    "assets": {
+      "headshot": "",
+      "comp_card_pdf": "EOEX-COMPCARD-AlbinaR.pdf",
+      "lookbook_pdf": "",
+      "lookbook": [],
+      "reels": [],
+      "polaroids": []
+    },
+    "frontImagePath": "",
+    "lookbookPdfUrl": "",
+    "compcardPdfUrl": "models/female/f-001/EOEX-COMPCARD-AlbinaR.pdf",
+    "portfolioUrl": "models/female/f-001/EOEX-COMPCARD-AlbinaR.pdf"
+  },
+  {
+    "id": "f-002",
+    "name": "Florin Monoy",
+    "gender": "female",
+    "height": "1,80m",
+    "shoulders": "",
+    "bust": "81",
+    "waist": "63",
+    "hips": "92",
+    "shoes": "9",
+    "hair": "blond",
+    "eyes": "brown",
+    "dressSize": "34",
+    "featured": true,
+    "location": "Paris, FR",
+    "basePath": "models/female/f-002",
+    "assets": {
+      "headshot": "florine.jpg",
+      "comp_card_pdf": "EOEX-COMPCARD-FlorineM.pdf",
+      "lookbook_pdf": "EOEX LOOKBOOK - FLORINE.pdf",
+      "lookbook": [],
+      "reels": [],
+      "polaroids": []
+    },
+    "frontImagePath": "models/female/f-002/florine.jpg",
+    "lookbookPdfUrl": "models/female/f-002/EOEX%20LOOKBOOK%20-%20FLORINE.pdf",
+    "compcardPdfUrl": "models/female/f-002/EOEX-COMPCARD-FlorineM.pdf",
+    "portfolioUrl": "models/female/f-002/EOEX%20LOOKBOOK%20-%20FLORINE.pdf"
+  }
+]

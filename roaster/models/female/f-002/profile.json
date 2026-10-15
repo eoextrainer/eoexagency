@@ -1,0 +1,25 @@
+{
+  "id": "f-002",
+  "name": "Florin Monoy",
+  "gender": "female",
+  "sourceFolder": "FLORINE",
+  "location": "Paris, FR",
+  "height": "1,80m",
+  "shoulders": "",
+  "bust": "81",
+  "waist": "63",
+  "hips": "92",
+  "shoes": "9",
+  "hair": "blond",
+  "eyes": "brown",
+  "dressSize": "34",
+  "featured": true,
+  "assets": {
+    "headshot": "florine.jpg",
+    "comp_card_pdf": "EOEX-COMPCARD-FlorineM.pdf",
+    "lookbook_pdf": "EOEX LOOKBOOK - FLORINE.pdf",
+    "lookbook": [],
+    "reels": [],
+    "polaroids": []
+  }
+}

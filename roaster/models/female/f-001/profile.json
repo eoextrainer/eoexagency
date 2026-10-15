@@ -1,0 +1,25 @@
+{
+  "id": "f-001",
+  "name": "Albina",
+  "gender": "female",
+  "sourceFolder": "ALBINA",
+  "location": "Paris, FR",
+  "height": "",
+  "shoulders": "",
+  "bust": "",
+  "waist": "",
+  "hips": "",
+  "shoes": "",
+  "hair": "",
+  "eyes": "",
+  "dressSize": "",
+  "featured": false,
+  "assets": {
+    "headshot": "",
+    "comp_card_pdf": "EOEX-COMPCARD-AlbinaR.pdf",
+    "lookbook_pdf": "",
+    "lookbook": [],
+    "reels": [],
+    "polaroids": []
+  }
+}

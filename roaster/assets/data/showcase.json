@@ -1,0 +1,13 @@
+[
+  {"id":"s001","type":"runway","title":"Paris Opening Walk","description":"Silhouettes nettes, rythme maitrise, energie editoriale."},
+  {"id":"s002","type":"runway","title":"Milano Night Segment","description":"Looks tailoring avec transitions fluides et impact visuel."},
+  {"id":"s003","type":"runway","title":"Berlin New Code","description":"Attitude contemporaine et precision choregraphique."},
+
+  {"id":"s004","type":"editorial","title":"Lumiere Matinale","description":"Narration image douce pour series lifestyle premium."},
+  {"id":"s005","type":"editorial","title":"Texture Studio","description":"Direction beaute et details peau en plan rapproche."},
+  {"id":"s006","type":"editorial","title":"Urban Storyline","description":"Jeu de contraste, regard camera, storytelling mode."},
+
+  {"id":"s007","type":"commercial","title":"Campaign Motion One","description":"Presence accessible, langage de marque clair."},
+  {"id":"s008","type":"commercial","title":"Retail Summer Capsule","description":"Expression chaleureuse adaptee aux usages digitaux."},
+  {"id":"s009","type":"commercial","title":"Beauty Close Program","description":"Gestuelle propre et cadence orientee conversion."}
+]
