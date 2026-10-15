@@ -965,6 +965,86 @@
   margin-top: 1.1rem;
 }
 
+.website-picks-section {
+  border-radius: 1.2rem;
+  border: 1px solid rgba(201, 169, 110, 0.34);
+  background:
+    radial-gradient(circle at 14% 8%, rgba(212, 175, 55, 0.2), transparent 42%),
+    radial-gradient(circle at 85% 0%, rgba(107, 46, 58, 0.2), transparent 35%),
+    linear-gradient(165deg, rgba(248, 245, 240, 0.98), rgba(238, 229, 214, 0.9));
+}
+
+.website-picks-frame {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(201, 169, 110, 0.58);
+  background: linear-gradient(145deg, rgba(20, 20, 20, 0.92), rgba(72, 27, 38, 0.86));
+  box-shadow: 0 26px 40px rgba(26, 26, 26, 0.22);
+}
+
+.website-picks-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  background:
+    linear-gradient(180deg, rgba(10, 10, 10, 0.06), rgba(10, 10, 10, 0.68)),
+    radial-gradient(circle at 18% 12%, rgba(212, 175, 55, 0.24), transparent 35%);
+}
+
+.website-picks-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  min-height: clamp(260px, 44vw, 720px);
+  max-height: 78vh;
+  object-fit: cover;
+}
+
+.website-picks-caption {
+  position: absolute;
+  z-index: 3;
+  left: 0.9rem;
+  right: 0.9rem;
+  bottom: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  border-radius: 999px;
+  border: 1px solid rgba(201, 169, 110, 0.62);
+  background: rgba(14, 14, 14, 0.56);
+  backdrop-filter: blur(8px);
+  color: #f8f5f0;
+  padding: 0.55rem 0.85rem;
+}
+
+.website-picks-caption span {
+  text-transform: uppercase;
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  color: rgba(212, 175, 55, 0.98);
+  font-weight: 700;
+}
+
+.website-picks-caption strong {
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  letter-spacing: 0.03em;
+  font-weight: 600;
+  color: #f8f5f0;
+}
+
+.website-picks-caption em {
+  margin-left: auto;
+  font-style: normal;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(248, 245, 240, 0.82);
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1482,6 +1562,13 @@ button.kiosk-cover-cta {
 
   .contact-grid {
     grid-template-columns: 0.9fr 1.1fr;
+  }
+
+  .website-picks-caption {
+    left: 1.2rem;
+    right: 1.2rem;
+    bottom: 1.2rem;
+    padding: 0.7rem 1rem;
   }
 }
 

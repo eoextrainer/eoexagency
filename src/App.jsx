@@ -672,6 +672,65 @@ const ARCHIVE_VIDEO_PATHS = [
   'FLORINE ROBE 1.mp4',
 ];
 
+const WEBSITE_PICKS_VIDEO_FILES = [
+  'arriv\u00e9e.mp4',
+  'beauty.mp4',
+  'collection 2.mp4',
+  'collection drycri.mp4',
+  'collection jeans.mp4',
+  'collection lune.mp4',
+  'collection randonn\u00e9e 2.mp4',
+  'collection randonn\u00e9e.mp4',
+  'conan_2.mp4',
+  'conan.mp4',
+  'dama_1.mp4',
+  'dama_2.mp4',
+  'dama_3.mp4',
+  'dama_4.mp4',
+  'dama_5.mp4',
+  'dama_6.mp4',
+  'dama.mp4',
+  'duo dama ornella.mp4',
+  'EOEX-masterclass-Lyon2026-1.mp4',
+  'fernando_1.mp4',
+  'fernando.mp4',
+  'florine_1.mp4',
+  'florine_10.mp4',
+  'florine_2.mp4',
+  'florine_3.mp4',
+  'florine_4.mp4',
+  'florine_5.mp4',
+  'florine_6.mp4',
+  'florine_7.mp4',
+  'florine_8.mp4',
+  'florine_9.mp4',
+  'florine.mp4',
+  'hinde.mp4',
+  'Imran.mp4',
+  'jade_1.mp4',
+  'jade_2.mp4',
+  'jade_3.mp4',
+  'jade_4.mp4',
+  'jade_5.mp4',
+  'jade.mp4',
+  'keira_1.mp4',
+  'keira.mp4',
+  'linda.mp4',
+  'Orna.mp4',
+  'ornella_1.mp4',
+  'ornella_2.mp4',
+  'ornella_3.mp4',
+  'ornella_4.mp4',
+  'ornella_5.mp4',
+  'ornella_6.mp4',
+  'ornella_7.mp4',
+  'ornella_8.mp4',
+  'ornella.mp4',
+  'sosthene.mp4',
+  'WhatsApp Video 2026-10-05 at 18.42.01.mp4',
+  'WhatsApp Video 2026-10-14 at 22.37.33.mp4',
+];
+
 const KIOSK_COPY = {
   en: {
     eyebrow: 'Kiosk',
@@ -1037,11 +1096,15 @@ function App() {
   const [masterclassImageIndex, setMasterclassImageIndex] = useState(0);
   const [archiveVideoIndex, setArchiveVideoIndex] = useState(0);
   const [activeArchiveVideoIndex, setActiveArchiveVideoIndex] = useState(null);
+  const [websitePickIndex, setWebsitePickIndex] = useState(
+    () => Math.floor(Math.random() * WEBSITE_PICKS_VIDEO_FILES.length),
+  );
   const [visibleArchiveImagesCount, setVisibleArchiveImagesCount] = useState(30);
   const [activeArchiveImage, setActiveArchiveImage] = useState(null);
   const [activeKioskItem, setActiveKioskItem] = useState(null);
 
   const statsRef = useRef(null);
+  const websitePickVideoRef = useRef(null);
 
   const imageFallbacks = useMemo(
     () => ({
@@ -1133,6 +1196,33 @@ function App() {
       })),
     [],
   );
+
+  const websitePickVideos = useMemo(
+    () =>
+      WEBSITE_PICKS_VIDEO_FILES.map((fileName, index) => ({
+        id: `website-pick-${index + 1}`,
+        title: fileName
+          .replace('.mp4', '')
+          .replace(/[_-]+/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim(),
+        src: toAssetUrl(`/res/videos/gallery/WEBSITE-PICKS/${fileName}`),
+      })),
+    [],
+  );
+
+  const activeWebsitePick = websitePickVideos[websitePickIndex] || websitePickVideos[0] || null;
+
+  const advanceWebsitePick = () => {
+    setWebsitePickIndex((previous) => {
+      if (websitePickVideos.length < 2) return previous;
+      let next = previous;
+      while (next === previous) {
+        next = Math.floor(Math.random() * websitePickVideos.length);
+      }
+      return next;
+    });
+  };
 
   const archiveImages = useMemo(
     () =>
@@ -1536,6 +1626,16 @@ function App() {
     return () => window.clearInterval(interval);
   }, [prefersReducedMotion, topCarouselTotal]);
 
+  useEffect(() => {
+    const videoElement = websitePickVideoRef.current;
+    if (!videoElement || !activeWebsitePick) return;
+
+    const playPromise = videoElement.play();
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch(() => {});
+    }
+  }, [activeWebsitePick]);
+
   return (
     <div className="dunex-site">
       <a className="skip-link" href="#about">
@@ -1770,6 +1870,36 @@ function App() {
                 </div>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section className="section website-picks-section" aria-label="EOEX Website Picks">
+          <div className="section-heading reveal">
+            <p className="eyebrow">Website Picks</p>
+            <h2>Curated Motion Gallery</h2>
+          </div>
+
+          <div className="website-picks-frame reveal">
+            {activeWebsitePick && (
+              <video
+                key={activeWebsitePick.id}
+                ref={websitePickVideoRef}
+                className="website-picks-video"
+                autoPlay
+                muted
+                playsInline
+                preload="metadata"
+                onEnded={advanceWebsitePick}
+                poster={imageFallbacks.video}
+              >
+                <source src={activeWebsitePick.src} type="video/mp4" />
+              </video>
+            )}
+            <div className="website-picks-caption">
+              <span>Now Playing</span>
+              <strong>{activeWebsitePick?.title || 'EOEX selection'}</strong>
+              <em>{websitePickIndex + 1} / {websitePickVideos.length}</em>
+            </div>
           </div>
         </section>
 
