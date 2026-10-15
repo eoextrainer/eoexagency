@@ -997,10 +997,12 @@
 .website-picks-video {
   display: block;
   width: 100%;
+  height: 700px;
   aspect-ratio: 16 / 9;
-  min-height: clamp(260px, 44vw, 720px);
-  max-height: 78vh;
+  min-height: 700px;
+  max-height: 700px;
   object-fit: cover;
+  object-position: center top;
 }
 
 .website-picks-caption {

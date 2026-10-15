@@ -731,6 +731,65 @@ const WEBSITE_PICKS_VIDEO_FILES = [
   'WhatsApp Video 2026-10-14 at 22.37.33.mp4',
 ];
 
+const WEBSITE_PICKS_VIDEO_TITLES = {
+  'arriv\u00e9e.mp4': 'Paris Arrival in Motion',
+  'beauty.mp4': 'Beauty Editorial in Motion',
+  'collection 2.mp4': 'Couture Collection in Motion',
+  'collection drycri.mp4': 'Textured Collection in Motion',
+  'collection jeans.mp4': 'Denim Collection in Motion',
+  'collection lune.mp4': 'Lunar Collection in Motion',
+  'collection randonn\u00e9e 2.mp4': 'Alpine Collection in Motion',
+  'collection randonn\u00e9e.mp4': 'Trailside Runway in Motion',
+  'conan_2.mp4': "Conan's Editorial Presence",
+  'conan.mp4': 'Conan in Runway Motion',
+  'dama_1.mp4': 'Dama in Editorial Motion',
+  'dama_2.mp4': "Dama's Runway Presence",
+  'dama_3.mp4': 'Dama in Studio Motion',
+  'dama_4.mp4': "Dama's Fashion Portrait",
+  'dama_5.mp4': 'Dama in Sculpted Silhouette',
+  'dama_6.mp4': "Dama's Editorial Poise",
+  'dama.mp4': 'Dama in Timeless Motion',
+  'duo dama ornella.mp4': 'Dama and Ornella Together',
+  'EOEX-masterclass-Lyon2026-1.mp4': 'Lyon Masterclass Highlights',
+  'fernando_1.mp4': "Fernando's Runway Presence",
+  'fernando.mp4': 'Fernando in Editorial Motion',
+  'florine_1.mp4': 'Florine in Modern Motion',
+  'florine_10.mp4': "Florine's Runway Moment",
+  'florine_2.mp4': 'Florine in Editorial Light',
+  'florine_3.mp4': "Florine's Chic Silhouette",
+  'florine_4.mp4': 'Florine in Studio Motion',
+  'florine_5.mp4': "Florine's Fashion Portrait",
+  'florine_6.mp4': 'Florine in Timeless Style',
+  'florine_7.mp4': "Florine's Parisian Presence",
+  'florine_8.mp4': 'Florine in Refined Motion',
+  'florine_9.mp4': "Florine's Editorial Poise",
+  'florine.mp4': "Florine's Signature Walk",
+  'hinde.mp4': "Hinde's Editorial Moment",
+  'Imran.mp4': 'Imran in Modern Tailoring',
+  'jade_1.mp4': 'Jade in Editorial Motion',
+  'jade_2.mp4': "Jade's Runway Presence",
+  'jade_3.mp4': 'Jade in Studio Light',
+  'jade_4.mp4': "Jade's Fashion Portrait",
+  'jade_5.mp4': 'Jade in Timeless Motion',
+  'jade.mp4': "Jade's Signature Walk",
+  'keira_1.mp4': "Keira's Runway Moment",
+  'keira.mp4': 'Keira in Editorial Light',
+  'linda.mp4': "Linda's Modern Portrait",
+  'Orna.mp4': 'Orna in Runway Motion',
+  'ornella_1.mp4': "Ornella's Editorial Poise",
+  'ornella_2.mp4': 'Ornella in Studio Motion',
+  'ornella_3.mp4': "Ornella's Signature Walk",
+  'ornella_4.mp4': 'Ornella in Parisian Light',
+  'ornella_5.mp4': "Ornella's Fashion Portrait",
+  'ornella_6.mp4': 'Ornella in Timeless Style',
+  'ornella_7.mp4': "Ornella's Runway Presence",
+  'ornella_8.mp4': 'Ornella in Refined Motion',
+  'ornella.mp4': "Ornella's Editorial Moment",
+  'sosthene.mp4': "Sosthene's Runway Walk",
+  'WhatsApp Video 2026-10-05 at 18.42.01.mp4': 'Fashion Moments in Motion',
+  'WhatsApp Video 2026-10-14 at 22.37.33.mp4': 'Candid Style in Motion',
+};
+
 const KIOSK_COPY = {
   en: {
     eyebrow: 'Kiosk',
@@ -1201,7 +1260,7 @@ function App() {
     () =>
       WEBSITE_PICKS_VIDEO_FILES.map((fileName, index) => ({
         id: `website-pick-${index + 1}`,
-        title: fileName
+        title: WEBSITE_PICKS_VIDEO_TITLES[fileName] || fileName
           .replace('.mp4', '')
           .replace(/[_-]+/g, ' ')
           .replace(/\s+/g, ' ')
