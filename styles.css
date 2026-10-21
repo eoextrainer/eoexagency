@@ -187,8 +187,11 @@ h1 em, h2 em { color: var(--gold); font-weight: 400; }
 .hero-video-button:hover, .hero-video-button:focus-visible { border-color: var(--gold-light); color: var(--gold-light); }
 .hero-video-count { min-width: 44px; color: rgba(255,255,255,.8); font-size: 8px; font-weight: 600; letter-spacing: .12em; text-align: center; }
 @media (min-width: 851px) {
-  .hero { height: min(112svh, 1050px); }
+  .hero { height: auto; min-height: 0; aspect-ratio: 9 / 16; }
   .hero-video { object-fit: cover; object-position: center top; }
+  .hero-content { align-self: start; margin-top: clamp(150px, 25svh, 240px); }
+  .hero-scroll { top: calc(100svh - 44px); bottom: auto; }
+  .hero-video-controls { top: calc(100svh - 64px); bottom: auto; }
 }
 .section-pad { padding-right: clamp(22px, 7.5vw, 120px); padding-left: clamp(22px, 7.5vw, 120px); }
 .intro, .models, .portfolio { background: var(--paper); }
