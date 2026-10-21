@@ -187,7 +187,7 @@ h1 em, h2 em { color: var(--gold); font-weight: 400; }
 .hero-video-button:hover, .hero-video-button:focus-visible { border-color: var(--gold-light); color: var(--gold-light); }
 .hero-video-count { min-width: 44px; color: rgba(255,255,255,.8); font-size: 8px; font-weight: 600; letter-spacing: .12em; text-align: center; }
 @media (min-width: 851px) {
-  .hero { height: auto; min-height: 0; aspect-ratio: 9 / 16; }
+  .hero { height: auto; min-height: 0; aspect-ratio: 9 / 20; }
   .hero-video { object-fit: contain; object-position: center top; }
   .hero-content { align-self: start; margin-top: clamp(150px, 25svh, 240px); }
   .hero-scroll { top: calc(100svh - 44px); bottom: auto; }
