@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10100f">
+    <meta name="description" content="EOEX Agency — considered representation, editorial talent and creative partnerships.">
+    <meta property="og:title" content="EOEX Agency — The Elegance of Excellence">
+    <meta property="og:description" content="Discover EOEX talent, creative work and opportunities across fashion and culture.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>EOEX Agency — The Elegance of Excellence</title>
+  </head>
+  <body>
+    <div id="agency-page">
+      <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="EOEX Agency home">
+          <span class="wordmark-main">EOEX</span><span class="wordmark-sub">AGENCY</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="#models">Models</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#opportunities">Opportunities</a>
+          <a class="nav-join" href="#join">Join us <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="home" aria-labelledby="hero-title">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2400&q=88" alt="" fetchpriority="high">
+          <div class="hero-shade"></div>
+          <div class="hero-content">
+            <p class="eyebrow hero-eyebrow">The elegance of excellence</p>
+            <h1 id="hero-title">Presence.<br><em>With purpose.</em></h1>
+            <p class="hero-copy">A considered agency for talent, image and ideas with a point of view.</p>
+            <a class="button button-light" href="#models">Discover our models <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero-index" aria-hidden="true">PARIS · WORLDWIDE&nbsp;&nbsp; / &nbsp;&nbsp;EOEX</p>
+          <a class="hero-scroll" href="#intro" aria-label="Scroll to introduction"><span></span>Scroll to explore</a>
+        </section>
+
+        <section class="intro section-pad" id="intro">
+          <p class="eyebrow">A different kind of agency</p>
+          <div class="intro-layout">
+            <h2>Where talent<br>meets <em>intention.</em></h2>
+            <div class="intro-copy">
+              <p>EOEX brings people, image and opportunity together with care. We represent individuality, build meaningful creative partnerships and make room for talent to grow.</p>
+              <a class="text-link" href="#join">Begin a conversation <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="intro-rule"><span>01</span><span>Considered representation</span><span>EOEX AGENCY</span></div>
+        </section>
+
+        <section class="models section-pad" id="models" aria-labelledby="models-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Distinctive by nature</p>
+              <h2 id="models-title">Our <em>models</em></h2>
+            </div>
+            <p class="section-aside">Meet the people bringing a fresh perspective to every frame, fitting and runway.</p>
+          </div>
+          <p class="image-note">Approved EOEX assets are included where available; remaining portrait and comp-card placeholders await approved material.</p>
+          <div class="roster-block">
+            <div class="roster-heading"><span>01 — The roster</span><span>Six profiles</span></div>
+            <div class="model-grid model-grid-six" id="model-grid-one"></div>
+          </div>
+          <div class="roster-block roster-block-last">
+            <div class="roster-heading"><span>02 — The roster</span><span>Eight profiles</span></div>
+            <div class="model-grid model-grid-eight" id="model-grid-two"></div>
+          </div>
+        </section>
+
+        <section class="portfolio section-pad" id="portfolio" aria-labelledby="portfolio-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Selected collaborations</p>
+              <h2 id="portfolio-title">In <em>focus</em></h2>
+            </div>
+            <p class="section-aside">A glimpse into the stories, campaigns and creative worlds we build together.</p>
+          </div>
+          <div class="portfolio-grid" id="portfolio-grid"></div>
+        </section>
+
+        <section class="opportunities section-pad" id="opportunities" aria-labelledby="opportunities-title">
+          <div class="opportunities-intro">
+            <p class="eyebrow">Open doors, meaningful work</p>
+            <div class="opportunities-heading">
+              <h2 id="opportunities-title">The next chapter<br>starts <em>together.</em></h2>
+              <p>Explore a selection of casting, creative and partnership opportunities across our network.</p>
+            </div>
+          </div>
+          <div class="carousel-topline">
+            <span class="carousel-count"><span id="carousel-current">01</span> <i>/</i> <span id="carousel-total">05</span></span>
+            <div class="carousel-controls">
+              <button class="carousel-button" type="button" data-carousel="prev" aria-label="Previous opportunities">←</button>
+              <button class="carousel-button" type="button" data-carousel="next" aria-label="Next opportunities">→</button>
+            </div>
+          </div>
+          <div class="opportunity-viewport" id="opportunity-viewport" aria-label="Opportunity cards">
+            <div class="opportunity-track" id="opportunity-track"></div>
+          </div>
+          <p class="carousel-hint">Select a card to discover more <span aria-hidden="true">↗</span></p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-cta">
+          <p class="eyebrow">A good beginning</p>
+          <h2>Let’s make something<br><em>matter.</em></h2>
+          <a class="button button-light" href="#join">Join our world <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="footer-main">
+          <a class="footer-brand" href="#home"><span>EOEX</span><small>AGENCY</small></a>
+          <div class="footer-links">
+            <div>
+              <p class="eyebrow">Explore</p>
+              <a href="#models">Models</a>
+              <a href="#portfolio">Portfolio</a>
+              <a href="#opportunities">Opportunities</a>
+            </div>
+            <div>
+              <p class="eyebrow">The EOEX world</p>
+              <a href="https://eoextrainer.github.io/eoexacademy/" target="_blank" rel="noreferrer">EOEX Academy <span aria-hidden="true">↗</span></a>
+              <a href="https://eoextrainer.github.io/eoexmagazines/" target="_blank" rel="noreferrer">CARTESIENES <span aria-hidden="true">↗</span></a>
+              <a href="https://eoexpublishing.fr/" target="_blank" rel="noreferrer">EOEX Publishing <span aria-hidden="true">↗</span></a>
+            </div>
+            <div>
+              <p class="eyebrow">Connect</p>
+              <a href="#join">Start an enquiry <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="year"></span> EOEX Agency</span><span>Made with intention.</span><a href="#home">Back to top ↑</a></div>
+      </footer>
+    </div>
+
+    <main class="join-page" id="join-page" hidden>
+      <header class="join-header">
+        <a class="wordmark" href="#home" aria-label="Return to EOEX Agency home">
+          <span class="wordmark-main">EOEX</span><span class="wordmark-sub">AGENCY</span>
+        </a>
+        <a class="join-return" href="#home"><span aria-hidden="true">←</span> Return to agency</a>
+      </header>
+      <section class="join-layout" aria-labelledby="join-title">
+        <div class="join-story">
+          <p class="eyebrow">Your next step</p>
+          <h1 id="join-title">There’s room<br>for <em>you.</em></h1>
+          <p>Tell us what brings you here. Whether you are talent, a creative partner or simply curious about the EOEX world, we would love to learn more.</p>
+          <div class="join-signoff"><span>EOEX</span><i></i><span>Let’s begin</span></div>
+        </div>
+        <form class="inquiry-form" id="inquiry-form">
+          <div class="form-heading"><p class="eyebrow">A note to EOEX</p><h2>Start a conversation</h2></div>
+          <div class="form-row">
+            <label class="field"><span>Your name</span><input name="name" autocomplete="name" required maxlength="100" placeholder="Name"></label>
+            <label class="field"><span>Email address</span><input name="email" type="email" autocomplete="email" required maxlength="160" placeholder="you@example.com"></label>
+          </div>
+          <div class="form-row">
+            <label class="field"><span>Country / city <small>Optional</small></span><input name="location" autocomplete="country-name" maxlength="100" placeholder="Where are you based?"></label>
+            <label class="field"><span>Phone <small>Optional</small></span><input name="phone" type="tel" autocomplete="tel" maxlength="50" placeholder="+33"></label>
+          </div>
+          <label class="field"><span>I’m interested in</span>
+            <select name="interest" id="interest" required>
+              <option value="">Choose an enquiry</option>
+              <option>Become an EOEX model</option>
+              <option>Enroll at EOEX Academy</option>
+              <option>Subscribe to CARTESIENES</option>
+              <option>Explore EOEX Publishing</option>
+              <option>Become an EOEX sponsor</option>
+              <option>Become an EOEX partner</option>
+              <option>Become an EOEX collaborator</option>
+            </select>
+          </label>
+          <label class="field"><span>Tell us a little more <small>Optional</small></span><textarea name="message" rows="4" maxlength="1500" placeholder="Share a few details about what you have in mind."></textarea></label>
+          <label class="consent"><input type="checkbox" name="consent" required><span>I understand this preview prepares a local enquiry file and does not send my details to EOEX.</span></label>
+          <p class="form-note">Your information is not uploaded or stored by this page. Prepare a local copy, then choose whether to download it.</p>
+          <button class="button button-dark" type="submit">Prepare my enquiry <span aria-hidden="true">↗</span></button>
+          <p class="form-result" id="form-result" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <footer class="join-footer"><span>© <span id="join-year"></span> EOEX Agency</span><a href="https://eoextrainer.github.io/eoexacademy/" target="_blank" rel="noreferrer">Discover EOEX Academy ↗</a></footer>
+    </main>
+
+    <dialog class="gallery-dialog" id="gallery-dialog" aria-labelledby="gallery-title">
+      <div class="gallery-dialog-inner">
+        <div class="gallery-dialog-header">
+          <div><p class="eyebrow">EOEX / Portfolio</p><h2 id="gallery-title">Gallery</h2></div>
+          <button class="dialog-close" type="button" aria-label="Close gallery">×</button>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <p class="gallery-note">Editorial stills are visual placeholders. The featured films are EOEX model material.</p>
+      </div>
+    </dialog>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
