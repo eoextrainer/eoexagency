@@ -2,6 +2,12 @@
 
 A static, responsive agency website designed for GitHub Pages.
 
+## Languages
+
+The site includes a native language selector for French, English, Spanish,
+Italian, Portuguese, and German. French is the first-visit default; the
+selected language is saved in the browser for future visits.
+
 ## Preview
 
 Open `index.html` directly, or serve the repository root with any static web
