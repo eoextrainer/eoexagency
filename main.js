@@ -21,6 +21,11 @@ const messages = {
   "aria.scroll": ["Défiler pour découvrir", "Scroll to explore", "Desplázate para descubrir", "Scorri per esplorare", "Deslize para explorar", "Zum Entdecken scrollen"],
   "aria.previous": ["Opportunités précédentes", "Previous opportunities", "Oportunidades anteriores", "Opportunità precedenti", "Oportunidades anteriores", "Vorherige Möglichkeiten"],
   "aria.next": ["Opportunités suivantes", "Next opportunities", "Próximas oportunidades", "Prossime opportunità", "Próximas oportunidades", "Nächste Möglichkeiten"],
+  "hero.videoControls": ["Contrôles de la vidéo d’accueil", "Home video controls", "Controles del vídeo de inicio", "Controlli del video iniziale", "Controlos do vídeo inicial", "Steuerung des Startvideos"],
+  "hero.videoPause": ["Mettre la vidéo en pause", "Pause the video", "Pausar el vídeo", "Metti in pausa il video", "Pausar o vídeo", "Video pausieren"],
+  "hero.videoPlay": ["Lire la vidéo", "Play the video", "Reproducir el vídeo", "Riproduci il video", "Reproduzir o vídeo", "Video abspielen"],
+  "hero.videoPrevious": ["Vidéo précédente", "Previous video", "Vídeo anterior", "Video precedente", "Vídeo anterior", "Vorheriges Video"],
+  "hero.videoNext": ["Vidéo suivante", "Next video", "Siguiente vídeo", "Video successivo", "Vídeo seguinte", "Nächstes Video"],
   "aria.opportunityCards": ["Cartes d’opportunités", "Opportunity cards", "Tarjetas de oportunidades", "Schede delle opportunità", "Cartões de oportunidades", "Karten mit Möglichkeiten"],
   "aria.closeGallery": ["Fermer la galerie", "Close gallery", "Cerrar galería", "Chiudi la galleria", "Fechar galeria", "Galerie schließen"],
   "nav.models": ["Mannequins", "Models", "Modelos", "Modelle", "Modelos", "Models"],
@@ -131,7 +136,7 @@ const messages = {
   "portfolio.exploreGallery": ["Explorer la galerie", "Explore the gallery", "Explorar la galería", "Esplora la galleria", "Explorar a galeria", "Galerie ansehen"],
   "portfolio.turnAria": ["Retourner la carte Portfolio : {title}", "Turn {title} portfolio card", "Girar la tarjeta de portfolio: {title}", "Gira la scheda portfolio: {title}", "Virar o cartão de portfólio: {title}", "Portfolio-Karte „{title}“ umdrehen"],
   "gallery.eyebrow": ["EOEX / Portfolio", "EOEX / Portfolio", "EOEX / Portfolio", "EOEX / Portfolio", "EOEX / Portfólio", "EOEX / Portfolio"],
-  "gallery.note": ["Photographies et films issus des books et productions EOEX.", "Photography and films from EOEX model books and productions.", "Fotografías y vídeos de los books y producciones de EOEX.", "Fotografie e video dai book e dalle produzioni EOEX.", "Fotografias e filmes dos books e produções EOEX.", "Fotos und Filme aus EOEX-Modelbooks und -Produktionen."],
+  "gallery.note": ["Chaque galerie présente uniquement les médias de sa catégorie.", "Each gallery shows media from its own category only.", "Cada galería muestra únicamente contenido de su categoría.", "Ogni galleria mostra solo i contenuti della propria categoria.", "Cada galeria mostra apenas conteúdos da respetiva categoria.", "Jede Galerie zeigt ausschließlich Medien ihrer Kategorie."],
   "gallery.filmUnsupported": ["Votre navigateur ne prend pas en charge la vidéo intégrée.", "Your browser does not support embedded video.", "Tu navegador no admite vídeo integrado.", "Il browser non supporta i video incorporati.", "O seu navegador não suporta vídeo incorporado.", "Dein Browser unterstützt keine eingebetteten Videos."],
   "opportunity.network": ["EOEX / Réseau", "EOEX / Network", "EOEX / Red", "EOEX / Rete", "EOEX / Rede", "EOEX / Netzwerk"],
   "opportunity.open": ["Opportunité ouverte", "Open opportunity", "Oportunidad abierta", "Opportunità aperta", "Oportunidade aberta", "Offene Möglichkeit"],
@@ -205,11 +210,7 @@ const film = (slug) => `assets/site/films/${slug}.mp4`;
 const modelMedia = {
   albina: {
     photos: photosFor("albina", 20),
-    films: [
-      film("albina-feature"),
-      "assets/site/runway/albina-mariage-1.mp4",
-      "assets/site/runway/albina-mariage-2.mp4"
-    ],
+    films: [film("albina-feature")],
     cover: "assets/site/models/albina-2.jpg"
   },
   alicia: { photos: photosFor("alicia", 8), films: [] },
@@ -222,9 +223,7 @@ const modelMedia = {
     films: [
       film("florine-minteh-1"), film("florine-robe-1"), film("florine-robe-2"),
       film("florine-mariage-2"), film("florine-eveningwear"), film("florine-rfw26"),
-      film("florine"), ...Array.from({ length: 10 }, (_, index) => film(`florine-${index + 1}`)),
-      "assets/site/runway/florine-mariage-1.mp4",
-      "assets/site/runway/florine-mariage-2.mp4"
+      film("florine"), ...Array.from({ length: 10 }, (_, index) => film(`florine-${index + 1}`))
     ]
   },
   jenna: { photos: photosFor("jenna", 7), films: [] },
@@ -234,11 +233,7 @@ const modelMedia = {
   patrycja: { photos: photosFor("patrycja", 2), films: [] },
   sosthene: {
     photos: photosFor("sosthene", 18),
-    films: [
-      film("sosthene"), film("sosthene-1"), film("sosthene-2"), film("sosthene-3"), film("sosthene-4"),
-      "assets/site/runway/sosthene-minteh-1.mp4",
-      "assets/site/runway/sosthene-minteh-2.mp4"
-    ]
+    films: [film("sosthene"), film("sosthene-1"), film("sosthene-2"), film("sosthene-3"), film("sosthene-4")]
   },
   tristan: { photos: photosFor("tristan", 2), films: [] }
 };
@@ -266,17 +261,9 @@ const portfolios = [
     title: "Runways",
     labelKey: "portfolio.labelMovement",
     descriptionKey: "portfolio.runwaysCopy",
-    imageSrc: "assets/site/models/florine-2.jpg",
-    gallery: [
-      ["assets/site/models/florine-2.jpg", "gallery.runway", "gallery.silhouette"],
-      ["assets/site/models/florine-3.jpg", "gallery.runway", "gallery.backstage"],
-      ["assets/site/models/florine-4.jpg", "gallery.runway", "gallery.movement"],
-      ["assets/site/models/florine-5.jpg", "gallery.runway", "gallery.detail"],
-      ["assets/site/models/florine-6.jpg", "gallery.runway", "gallery.collection"],
-      ["assets/site/models/florine-7.jpg", "gallery.runway", "gallery.finale"]
-    ],
+    imageSrc: "assets/site/covers/runway.jpg",
+    gallery: [],
     films: [
-      { src: "assets/site/runway/mfw26-backstage.mp4", poster: "assets/site/runway/posters/mfw26-backstage.jpg", captionKey: "gallery.florineRunway" },
       { src: "assets/site/runway/albina-mariage-1.mp4", poster: "assets/site/runway/posters/albina-mariage-1.jpg", captionKey: "gallery.runway" },
       { src: "assets/site/runway/albina-mariage-2.mp4", poster: "assets/site/runway/posters/albina-mariage-2.jpg", captionKey: "gallery.runway" },
       { src: "assets/site/runway/catia-robe-1.mp4", poster: "assets/site/runway/posters/catia-robe-1.jpg", captionKey: "gallery.runway" },
@@ -285,12 +272,7 @@ const portfolios = [
       { src: "assets/site/runway/florine-mariage-2.mp4", poster: "assets/site/runway/posters/florine-mariage-2.jpg", captionKey: "gallery.florineRunway" },
       { src: "assets/site/runway/sosthene-minteh-1.mp4", poster: "assets/site/runway/posters/sosthene-minteh-1.jpg", captionKey: "gallery.runway" },
       { src: "assets/site/runway/sosthene-minteh-2.mp4", poster: "assets/site/runway/posters/sosthene-minteh-2.jpg", captionKey: "gallery.runway" }
-    ],
-    film: {
-      src: film("florine-rfw26"),
-      poster: "assets/site/models/florine-2.jpg",
-      captionKey: "gallery.florineRunway"
-    }
+    ]
   },
   {
     key: "editorial",
@@ -305,63 +287,34 @@ const portfolios = [
       ["assets/site/editorial/editorial-4.jpg", "gallery.editorial", "gallery.styling"],
       ["assets/site/editorial/editorial-5.jpg", "gallery.editorial", "gallery.colour"],
       ["assets/site/editorial/editorial-6.jpg", "gallery.editorial", "gallery.detail"],
-      ["assets/site/editorial/editorial-7.jpg", "gallery.editorial", "gallery.portrait"],
-      ["assets/site/models/albina-2.jpg", "gallery.editorial", "gallery.portrait"],
-      ["assets/site/models/alicia-1.jpg", "gallery.editorial", "gallery.form"],
-      ["assets/site/models/florine-4.jpg", "gallery.editorial", "gallery.closeup"],
-      ["assets/site/models/jenna-1.jpg", "gallery.editorial", "gallery.styling"],
-      ["assets/site/models/sosthene-5.jpg", "gallery.editorial", "gallery.colour"],
-      ["assets/site/models/tristan-1.jpg", "gallery.editorial", "gallery.detail"]
-    ],
-    film: {
-      src: film("florine-eveningwear"),
-      poster: "assets/site/models/florine-5.jpg",
-      captionKey: "gallery.florineFilm"
-    }
+      ["assets/site/editorial/editorial-7.jpg", "gallery.editorial", "gallery.portrait"]
+    ]
   },
   {
     key: "commercial",
     title: "Commercial",
     labelKey: "portfolio.labelCampaign",
     descriptionKey: "portfolio.commercialCopy",
-    imageSrc: "assets/site/models/fernando-1.jpg",
+    imageSrc: "assets/site/covers/commercial.jpg",
     films: [
       { src: "assets/site/commercial/perfume.mp4", poster: "assets/site/commercial/posters/perfume.jpg", captionKey: "gallery.campaign" },
       { src: "assets/site/commercial/sosthene-campaign.mp4", poster: "assets/site/commercial/posters/sosthene-campaign.jpg", captionKey: "gallery.campaign" }
     ],
-    gallery: [
-      ["assets/site/models/fernando-1.jpg", "gallery.campaign", "gallery.together"],
-      ["assets/site/models/linda-1.jpg", "gallery.campaign", "gallery.expression"],
-      ["assets/site/models/sosthene-11.jpg", "gallery.campaign", "gallery.wardrobe"],
-      ["assets/site/models/alicia-4.jpg", "gallery.campaign", "gallery.texture"],
-      ["assets/site/models/albina-15.jpg", "gallery.campaign", "gallery.portrait"],
-      ["assets/site/models/orna-1.jpg", "gallery.campaign", "gallery.story"]
-    ],
-    film: {
-      src: film("albina-feature"),
-      poster: "assets/site/models/albina-2.jpg",
-      captionKey: "gallery.albinaFilm"
-    }
+    gallery: []
   },
   {
     key: "beauty",
     title: "Cosmetics & Beauty",
     labelKey: "portfolio.labelBeauty",
     descriptionKey: "portfolio.beautyCopy",
-    imageSrc: "assets/site/beauty/beauty-1.jpg",
+    imageSrc: "assets/site/covers/beauty.jpg",
     gallery: [
       ["assets/site/beauty/beauty-1.jpg", "gallery.beauty", "gallery.skin"],
       ["assets/site/beauty/beauty-2.jpg", "gallery.beauty", "gallery.portrait"],
       ["assets/site/beauty/beauty-3.jpg", "gallery.beauty", "gallery.colour"],
       ["assets/site/beauty/beauty-4.jpg", "gallery.beauty", "gallery.light"],
       ["assets/site/beauty/beauty-5.jpg", "gallery.beauty", "gallery.form"],
-      ["assets/site/beauty/beauty-6.jpg", "gallery.beauty", "gallery.detail"],
-      ["assets/site/models/alicia-1.jpg", "gallery.beauty", "gallery.skin"],
-      ["assets/site/models/albina-10.jpg", "gallery.beauty", "gallery.portrait"],
-      ["assets/site/models/jenna-2.jpg", "gallery.beauty", "gallery.colour"],
-      ["assets/site/models/orna-3.jpg", "gallery.beauty", "gallery.light"],
-      ["assets/site/models/keira-5.jpg", "gallery.beauty", "gallery.form"],
-      ["assets/site/models/linda-8.jpg", "gallery.beauty", "gallery.detail"]
+      ["assets/site/beauty/beauty-6.jpg", "gallery.beauty", "gallery.detail"]
     ]
   }
 ];
@@ -526,6 +479,7 @@ function renderLocalizedContent() {
   document.querySelectorAll(".language-select").forEach((select) => {
     select.value = currentLanguage;
   });
+  if (heroVideoToggle) updateHeroVideoControls();
   renderModels();
   renderPortfolios();
   renderOpportunities();
@@ -574,6 +528,77 @@ function updateRoute() {
 }
 window.addEventListener("hashchange", updateRoute);
 updateRoute();
+
+const heroVideo = document.querySelector("#hero-video");
+const heroVideoToggle = document.querySelector("#hero-video-toggle");
+const heroVideoCount = document.querySelector("#hero-video-count");
+const heroVideos = [
+  { src: "assets/site/hero-carousel/arrivee.mp4", poster: "assets/site/hero-carousel/posters/arrivee.jpg" },
+  { src: "assets/site/hero-carousel/eoex-intro.mp4", poster: "assets/site/hero-carousel/posters/eoex-intro.jpg" },
+  { src: "assets/site/hero-carousel/italian-showroom.mp4", poster: "assets/site/hero-carousel/posters/italian-showroom.jpg" },
+  { src: "assets/site/hero-carousel/mfw26-backstage-reel.mp4", poster: "assets/site/hero-carousel/posters/mfw26-backstage-reel.jpg" }
+];
+const reducedMotionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+let heroVideoIndex = 0;
+let heroVideoPlaying = !reducedMotionPreference.matches;
+let heroVisible = !joinPage.hidden;
+let heroRotationTimer = null;
+
+function updateHeroVideoControls() {
+  heroVideoCount.textContent = `${String(heroVideoIndex + 1).padStart(2, "0")} / ${String(heroVideos.length).padStart(2, "0")}`;
+  heroVideoToggle.setAttribute("aria-label", t(heroVideoPlaying ? "hero.videoPause" : "hero.videoPlay"));
+  heroVideoToggle.querySelector("span").textContent = heroVideoPlaying ? "Ⅱ" : "▶";
+}
+
+function syncHeroVideoPlayback() {
+  window.clearInterval(heroRotationTimer);
+  if (!heroVideoPlaying || !heroVisible || document.hidden) {
+    heroVideo.pause();
+    updateHeroVideoControls();
+    return;
+  }
+
+  heroVideo.play().catch((error) => {
+    if (error.name === "AbortError") return;
+    console.error("The home-page video could not start playing.", error);
+    window.clearInterval(heroRotationTimer);
+    heroVideoPlaying = false;
+    updateHeroVideoControls();
+  });
+  heroRotationTimer = window.setInterval(() => showHeroVideo(heroVideoIndex + 1), 12000);
+  updateHeroVideoControls();
+}
+
+function showHeroVideo(index) {
+  heroVideoIndex = (index + heroVideos.length) % heroVideos.length;
+  const video = heroVideos[heroVideoIndex];
+  heroVideo.pause();
+  heroVideo.src = video.src;
+  heroVideo.poster = video.poster;
+  heroVideo.load();
+  syncHeroVideoPlayback();
+}
+
+heroVideo.addEventListener("error", () => {
+  console.error("The home-page video asset failed to load.", heroVideo.currentSrc);
+});
+heroVideoToggle.addEventListener("click", () => {
+  heroVideoPlaying = !heroVideoPlaying;
+  syncHeroVideoPlayback();
+});
+document.querySelector("#hero-video-prev").addEventListener("click", () => showHeroVideo(heroVideoIndex - 1));
+document.querySelector("#hero-video-next").addEventListener("click", () => showHeroVideo(heroVideoIndex + 1));
+document.addEventListener("visibilitychange", syncHeroVideoPlayback);
+reducedMotionPreference.addEventListener("change", (event) => {
+  if (event.matches) heroVideoPlaying = false;
+  syncHeroVideoPlayback();
+});
+new IntersectionObserver(([entry]) => {
+  heroVisible = entry.isIntersecting;
+  syncHeroVideoPlayback();
+}, { threshold: 0.15 }).observe(document.querySelector("#home"));
+updateHeroVideoControls();
+syncHeroVideoPlayback();
 
 const opportunityViewport = document.querySelector("#opportunity-viewport");
 const carouselCurrent = document.querySelector("#carousel-current");

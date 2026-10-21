@@ -47,7 +47,7 @@
 
       <main>
         <section class="hero" id="home" aria-labelledby="hero-title">
-          <img class="hero-image" src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2400&q=88" alt="" fetchpriority="high">
+          <video class="hero-video" id="hero-video" src="assets/site/hero-carousel/arrivee.mp4" poster="assets/site/hero-carousel/posters/arrivee.jpg" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1"></video>
           <div class="hero-shade"></div>
           <div class="hero-content">
             <p class="eyebrow hero-eyebrow" data-i18n="hero.eyebrow">L’élégance de l’excellence</p>
@@ -57,6 +57,12 @@
           </div>
           <p class="hero-index" aria-hidden="true">PARIS · WORLDWIDE&nbsp;&nbsp; / &nbsp;&nbsp;EOEX</p>
           <a class="hero-scroll" href="#intro" aria-label="Défiler pour découvrir" data-i18n-aria="aria.scroll"><span></span><span data-i18n="hero.scroll">Défiler pour découvrir</span></a>
+          <div class="hero-video-controls" role="group" aria-label="Contrôles de la vidéo d’accueil" data-i18n-aria="hero.videoControls">
+            <button class="hero-video-button" id="hero-video-toggle" type="button" aria-label="Mettre la vidéo en pause" data-i18n-aria="hero.videoPause"><span aria-hidden="true">Ⅱ</span></button>
+            <span class="hero-video-count" id="hero-video-count" aria-hidden="true">01 / 04</span>
+            <button class="hero-video-button" id="hero-video-prev" type="button" aria-label="Vidéo précédente" data-i18n-aria="hero.videoPrevious"><span aria-hidden="true">←</span></button>
+            <button class="hero-video-button" id="hero-video-next" type="button" aria-label="Vidéo suivante" data-i18n-aria="hero.videoNext"><span aria-hidden="true">→</span></button>
+          </div>
         </section>
 
         <section class="intro section-pad" id="intro">

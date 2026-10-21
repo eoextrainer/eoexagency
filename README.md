@@ -17,10 +17,13 @@ server. No build step or dependency installation is required.
 
 - The model roster and opportunity listings follow the supplied brief.
 - Supplied model photos and films are matched to profiles by filename and
-  appear in the model and portfolio galleries. New editorial and beauty
-  imagery, plus runway and commercial films, appear in their respective
-  portfolio galleries. Profiles without matching assets retain illustrative
-  portraits until approved material is provided.
+  appear in the model galleries. Each portfolio gallery uses media only from
+  its matching `assets/beauty/`, `assets/editorial/`, `assets/runway/`, or
+  `assets/commercial/` folder. The home hero carousel uses only videos from
+  `assets/hero-carousel/`; the separate `assets/covers/` images are used for
+  portfolio tile covers.
+- Profiles without matching assets retain illustrative portraits until
+  approved material is provided.
 - Comp-card PDFs are available for 12 profiles. Profiles still awaiting a
   comp card include an enquiry link and any available photo or film gallery.
 - The JOIN US form validates the inquiry and downloads a local copy. It does
