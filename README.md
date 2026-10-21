@@ -16,10 +16,11 @@ server. No build step or dependency installation is required.
 ## Content notes
 
 - The model roster and opportunity listings follow the supplied brief.
-- Comp-card PDFs are currently available for Albina and Florine. Other model
-  cards show a placeholder until approved comp cards are provided.
-- Editorial photos are visual placeholders and should be replaced with
-  approved EOEX/model photography before launch.
+- Supplied model photos and films are matched to profiles by filename and
+  appear in the model and portfolio galleries. Profiles without matching
+  assets retain illustrative portraits until approved material is provided.
+- Comp-card PDFs are available for 11 profiles. Profiles still awaiting a
+  comp card include an enquiry link and any available photo or film gallery.
 - The JOIN US form validates the inquiry and downloads a local copy. It does
   not send or store personal information; connect an approved form service
   before accepting live inquiries.

@@ -41,7 +41,7 @@ const messages = {
   "models.eyebrow": ["Singuliers par nature", "Distinctive by nature", "Únicos por naturaleza", "Unici per natura", "Singulares por natureza", "Von Natur aus einzigartig"],
   "models.title": ["Nos <em>talents</em>", "Our <em>models</em>", "Nuestros <em>modelos</em>", "I nostri <em>modelli</em>", "Os nossos <em>modelos</em>", "Unsere <em>Models</em>"],
   "models.aside": ["Rencontrez celles et ceux qui apportent un regard neuf à chaque image, essayage et défilé.", "Meet the people bringing a fresh perspective to every frame, fitting and runway.", "Conoce a quienes aportan una mirada nueva a cada imagen, prueba y pasarela.", "Incontra chi porta una prospettiva nuova a ogni scatto, fitting e passerella.", "Conheça quem traz uma nova perspetiva a cada imagem, prova e desfile.", "Lerne die Menschen kennen, die jedem Bild, Fitting und Laufsteg eine neue Perspektive geben."],
-  "models.note": ["Les visuels EOEX validés sont intégrés lorsqu’ils sont disponibles ; les autres portraits et books seront ajoutés dès réception des éléments approuvés.", "Approved EOEX assets are included where available; remaining portraits and comp cards await approved material.", "Incluimos el material EOEX aprobado disponible; los demás retratos y composites se añadirán cuando estén listos.", "Sono inclusi i materiali EOEX approvati disponibili; gli altri ritratti e composit saranno aggiunti appena pronti.", "Os materiais EOEX aprovados estão incluídos quando disponíveis; os restantes retratos e composites serão adicionados assim que aprovados.", "Freigegebenes EOEX-Material ist eingebunden; weitere Porträts und Sedcards folgen, sobald sie vorliegen."],
+  "models.note": ["Les photos et films fournis sont associés à leur profil EOEX. Ouvrez une carte pour consulter les books et galeries disponibles.", "Supplied photos and films are matched to their EOEX profiles. Open a card to view available comp cards and galleries.", "Las fotos y vídeos se asocian a sus perfiles EOEX. Abre una tarjeta para ver los composites y galerías disponibles.", "Foto e video forniti sono associati ai profili EOEX. Apri una scheda per vedere i composit e le gallerie disponibili.", "As fotos e filmes fornecidos estão associados aos perfis EOEX. Abra um cartão para ver os composites e galerias disponíveis.", "Die bereitgestellten Fotos und Filme sind den EOEX-Profilen zugeordnet. Öffne eine Karte für Sedcards und Galerien."],
   "models.rosterOne": ["01 — Le roster", "01 — The roster", "01 — El elenco", "01 — I talenti", "01 — O elenco", "01 — Das Roster"],
   "models.rosterTwo": ["02 — Le roster", "02 — The roster", "02 — El elenco", "02 — I talenti", "02 — O elenco", "02 — Das Roster"],
   "models.sixProfiles": ["Six profils", "Six profiles", "Seis perfiles", "Sei profili", "Seis perfis", "Sechs Profile"],
@@ -111,6 +111,8 @@ const messages = {
   "model.pending": ["Book à venir", "Comp card pending", "Composite pendiente", "Composit in arrivo", "Composite pendente", "Sedcard folgt"],
   "model.pendingCopy": ["Les détails du profil et son book approuvé seront ajoutés ici.", "Profile details and approved comp card will be added here.", "Aquí añadiremos los datos del perfil y su composite aprobado.", "Qui aggiungeremo i dettagli del profilo e il composit approvato.", "Os detalhes do perfil e o composite aprovado serão adicionados aqui.", "Profildetails und freigegebene Sedcard folgen hier."],
   "model.openCard": ["Ouvrir le book", "Open comp card", "Abrir composite", "Apri composit", "Abrir composite", "Sedcard öffnen"],
+  "model.viewGallery": ["Voir les photos & films", "View photos & films", "Ver fotos y vídeos", "Vedi foto e video", "Ver fotos e vídeos", "Fotos & Filme ansehen"],
+  "model.galleryIntro": ["Photographies et films du book EOEX.", "Photography and films from the EOEX model book.", "Fotografías y vídeos del book de EOEX.", "Fotografie e video dal book EOEX.", "Fotografias e filmes do book EOEX.", "Fotos und Filme aus dem EOEX-Modelbook."],
   "model.enquire": ["Nous contacter", "Enquire", "Consultar", "Contattaci", "Contactar", "Anfragen"],
   "model.back": ["Retour au portrait ↑", "Back to portrait ↑", "Volver al retrato ↑", "Torna al ritratto ↑", "Voltar ao retrato ↑", "Zurück zum Porträt ↑"],
   "model.returnAria": ["Revenir au portrait de {name}", "Return to {name}’s portrait", "Volver al retrato de {name}", "Torna al ritratto di {name}", "Voltar ao retrato de {name}", "Zurück zu {name}s Porträt"],
@@ -129,7 +131,7 @@ const messages = {
   "portfolio.exploreGallery": ["Explorer la galerie", "Explore the gallery", "Explorar la galería", "Esplora la galleria", "Explorar a galeria", "Galerie ansehen"],
   "portfolio.turnAria": ["Retourner la carte Portfolio : {title}", "Turn {title} portfolio card", "Girar la tarjeta de portfolio: {title}", "Gira la scheda portfolio: {title}", "Virar o cartão de portfólio: {title}", "Portfolio-Karte „{title}“ umdrehen"],
   "gallery.eyebrow": ["EOEX / Portfolio", "EOEX / Portfolio", "EOEX / Portfolio", "EOEX / Portfolio", "EOEX / Portfólio", "EOEX / Portfolio"],
-  "gallery.note": ["Les photos éditoriales sont des visuels d’illustration. Les films présentés mettent en scène les mannequins EOEX.", "Editorial stills are visual placeholders. The featured films are EOEX model material.", "Las fotografías editoriales son ilustrativas. Los vídeos muestran a modelos de EOEX.", "Le immagini editoriali sono illustrative. I video presentati mostrano i modelli EOEX.", "As fotografias editoriais são ilustrativas. Os vídeos apresentados mostram modelos EOEX.", "Die Editorial-Fotos dienen als Platzhalter. Die Filme zeigen EOEX-Models."],
+  "gallery.note": ["Photographies et films issus des books et productions EOEX.", "Photography and films from EOEX model books and productions.", "Fotografías y vídeos de los books y producciones de EOEX.", "Fotografie e video dai book e dalle produzioni EOEX.", "Fotografias e filmes dos books e produções EOEX.", "Fotos und Filme aus EOEX-Modelbooks und -Produktionen."],
   "gallery.filmUnsupported": ["Votre navigateur ne prend pas en charge la vidéo intégrée.", "Your browser does not support embedded video.", "Tu navegador no admite vídeo integrado.", "Il browser non supporta i video incorporati.", "O seu navegador não suporta vídeo incorporado.", "Dein Browser unterstützt keine eingebetteten Videos."],
   "opportunity.network": ["EOEX / Réseau", "EOEX / Network", "EOEX / Red", "EOEX / Rete", "EOEX / Rede", "EOEX / Netzwerk"],
   "opportunity.open": ["Opportunité ouverte", "Open opportunity", "Oportunidad abierta", "Opportunità aperta", "Oportunidade aberta", "Offene Möglichkeit"],
@@ -169,6 +171,10 @@ const messages = {
   "gallery.light": ["Lumière", "Light", "Luz", "Luce", "Luz", "Licht"],
   "gallery.florineFilm": ["Florine / film en tenue de soirée", "Florine / eveningwear film", "Florine / vídeo de noche", "Florine / film in abito da sera", "Florine / filme de vestido de noite", "Florine / Abendmode-Film"],
   "gallery.albinaFilm": ["Albina / film de cérémonie", "Albina / celebration film", "Albina / vídeo de celebración", "Albina / film celebrativo", "Albina / filme de celebração", "Albina / Festfilm"],
+  "gallery.modelFilm": ["Film EOEX — {name}", "EOEX film — {name}", "Vídeo EOEX — {name}", "Video EOEX — {name}", "Filme EOEX — {name}", "EOEX-Film — {name}"],
+  "gallery.modelPhoto": ["Book EOEX — {name}", "EOEX model book — {name}", "Book EOEX — {name}", "Book EOEX — {name}", "Book EOEX — {name}", "EOEX-Modelbook — {name}"],
+  "gallery.modelTitle": ["Book de {name}", "{name} model book", "Book de {name}", "Book di {name}", "Book de {name}", "{name}s Modelbook"],
+  "gallery.florineRunway": ["Florine / défilé RFW26", "Florine / RFW26 runway", "Florine / pasarela RFW26", "Florine / passerella RFW26", "Florine / desfile RFW26", "Florine / Laufsteg RFW26"],
   "city.paris": ["Paris", "Paris", "París", "Parigi", "Paris", "Paris"],
   "city.madrid": ["Madrid", "Madrid", "Madrid", "Madrid", "Madrid", "Madrid"],
   "city.barcelona": ["Barcelone", "Barcelona", "Barcelona", "Barcellona", "Barcelona", "Barcelona"],
@@ -193,21 +199,51 @@ function t(key, substitutions = {}) {
 
 let currentLanguage = "fr";
 
+const photosFor = (slug, count) =>
+  Array.from({ length: count }, (_, index) => `assets/site/models/${slug}-${index + 1}.jpg`);
+const film = (slug) => `assets/site/films/${slug}.mp4`;
+const modelMedia = {
+  albina: { photos: photosFor("albina", 20), films: [film("albina-feature")], cover: "assets/site/models/albina-2.jpg" },
+  alicia: { photos: photosFor("alicia", 8), films: [] },
+  conan: { photos: [], films: [film("conan"), film("conan-2")], poster: "assets/site/models/conan-poster.jpg" },
+  henri: { photos: ["assets/site/models/henri-card.jpg"], films: [] },
+  antenor: { photos: ["assets/site/models/antenor-card.jpg"], films: [] },
+  fernando: { photos: photosFor("fernando", 7), films: [film("fernando"), film("fernando-1")] },
+  florine: {
+    photos: ["assets/site/models/florine.jpg", ...photosFor("florine", 7)],
+    films: [
+      film("florine-minteh-1"), film("florine-robe-1"), film("florine-robe-2"),
+      film("florine-mariage-2"), film("florine-eveningwear"), film("florine-rfw26"),
+      film("florine"), ...Array.from({ length: 10 }, (_, index) => film(`florine-${index + 1}`))
+    ]
+  },
+  jenna: { photos: photosFor("jenna", 7), films: [] },
+  keira: { photos: photosFor("keira", 6), films: [film("keira"), film("keira-1")] },
+  linda: { photos: photosFor("linda", 8), films: [film("linda")] },
+  ornella: { photos: photosFor("orna", 8), films: [film("orna")] },
+  patrycja: { photos: photosFor("patrycja", 2), films: [] },
+  sosthene: {
+    photos: photosFor("sosthene", 18),
+    films: [film("sosthene"), film("sosthene-1"), film("sosthene-2"), film("sosthene-3"), film("sosthene-4")]
+  },
+  tristan: { photos: photosFor("tristan", 2), films: [] }
+};
+
 const models = [
-  { name: "Albina", image: "photo-1534528741775-53994a69daeb", compCard: "assets/comp-cards/albina.pdf" },
-  { name: "Tristan", image: "photo-1500648767791-00dcc994a43e" },
-  { name: "Florine", src: "assets/models/florine.jpg", compCard: "assets/comp-cards/florine.pdf" },
-  { name: "Conan", image: "photo-1506794778202-cad84cf45f1d" },
-  { name: "Jenna", image: "photo-1515886657613-9f3515b0c78f" },
-  { name: "Sosthene", image: "photo-1506794778202-cad84cf45f1d" },
-  { name: "Fernando", image: "photo-1500648767791-00dcc994a43e" },
-  { name: "Alicia", image: "photo-1529139574466-a303027c1d8b" },
-  { name: "Henri", image: "photo-1506794778202-cad84cf45f1d" },
-  { name: "Keira", image: "photo-1539109136881-3be0616acf4b" },
-  { name: "Patrycja", image: "photo-1509631179647-0177331693ae" },
-  { name: "Ornella", image: "photo-1525507119028-ed4c629a60a3" },
-  { name: "Linda", image: "photo-1515886657613-9f3515b0c78f" },
-  { name: "Antenor", image: "photo-1506794778202-cad84cf45f1d" }
+  { name: "Albina", mediaKey: "albina", compCard: "assets/comp-cards/albina.pdf" },
+  { name: "Tristan", mediaKey: "tristan" },
+  { name: "Florine", mediaKey: "florine", compCard: "assets/comp-cards/florine.pdf" },
+  { name: "Conan", mediaKey: "conan", compCard: "assets/comp-cards/EOEX-COMPCARD-Conan.pdf" },
+  { name: "Jenna", mediaKey: "jenna" },
+  { name: "Sosthene", mediaKey: "sosthene", compCard: "assets/comp-cards/EOEX-COMPCARD-SostheneG.pdf" },
+  { name: "Fernando", mediaKey: "fernando", compCard: "assets/comp-cards/EOEX-COMPCARD-FernandoB.pdf" },
+  { name: "Alicia", mediaKey: "alicia", compCard: "assets/comp-cards/EOEX-COMPCARD-AliciaV.pdf" },
+  { name: "Henri", mediaKey: "henri", compCard: "assets/comp-cards/EOEX-COMPCARD-HenriD.pdf" },
+  { name: "Keira", mediaKey: "keira" },
+  { name: "Patrycja", mediaKey: "patrycja", compCard: "assets/comp-cards/EOEX-COMPCARD-Patrycja.pdf" },
+  { name: "Ornella", mediaKey: "ornella", compCard: "assets/comp-cards/EOEX-COMPCARD-OrnellaB.pdf" },
+  { name: "Linda", mediaKey: "linda", compCard: "assets/comp-cards/EOEX-COMPCARD-LindaC.pdf" },
+  { name: "Antenor", mediaKey: "antenor", compCard: "assets/comp-cards/EOEX-COMPCARD-AntenorT.pdf" }
 ];
 
 const portfolios = [
@@ -216,33 +252,38 @@ const portfolios = [
     title: "Runways",
     labelKey: "portfolio.labelMovement",
     descriptionKey: "portfolio.runwaysCopy",
-    image: "photo-1539109136881-3be0616acf4b",
+    imageSrc: "assets/site/models/florine-2.jpg",
     gallery: [
-      ["photo-1539109136881-3be0616acf4b", "gallery.runway", "gallery.silhouette"],
-      ["photo-1509631179647-0177331693ae", "gallery.runway", "gallery.backstage"],
-      ["photo-1529139574466-a303027c1d8b", "gallery.runway", "gallery.movement"],
-      ["photo-1525507119028-ed4c629a60a3", "gallery.runway", "gallery.detail"],
-      ["photo-1483985988355-763728e1935b", "gallery.runway", "gallery.collection"],
-      ["photo-1515886657613-9f3515b0c78f", "gallery.runway", "gallery.finale"]
-    ]
+      ["assets/site/models/florine-2.jpg", "gallery.runway", "gallery.silhouette"],
+      ["assets/site/models/florine-3.jpg", "gallery.runway", "gallery.backstage"],
+      ["assets/site/models/florine-4.jpg", "gallery.runway", "gallery.movement"],
+      ["assets/site/models/florine-5.jpg", "gallery.runway", "gallery.detail"],
+      ["assets/site/models/florine-6.jpg", "gallery.runway", "gallery.collection"],
+      ["assets/site/models/florine-7.jpg", "gallery.runway", "gallery.finale"]
+    ],
+    film: {
+      src: film("florine-rfw26"),
+      poster: "assets/site/models/florine-2.jpg",
+      captionKey: "gallery.florineRunway"
+    }
   },
   {
     key: "editorial",
     title: "Editorial",
     labelKey: "portfolio.labelImage",
     descriptionKey: "portfolio.editorialCopy",
-    image: "photo-1529139574466-a303027c1d8b",
+    imageSrc: "assets/site/models/albina-2.jpg",
     gallery: [
-      ["photo-1529139574466-a303027c1d8b", "gallery.editorial", "gallery.portrait"],
-      ["photo-1524504388940-b1c1722653e1", "gallery.editorial", "gallery.form"],
-      ["photo-1534528741775-53994a69daeb", "gallery.editorial", "gallery.closeup"],
-      ["photo-1509631179647-0177331693ae", "gallery.editorial", "gallery.styling"],
-      ["photo-1515886657613-9f3515b0c78f", "gallery.editorial", "gallery.colour"],
-      ["photo-1525507119028-ed4c629a60a3", "gallery.editorial", "gallery.detail"]
+      ["assets/site/models/albina-2.jpg", "gallery.editorial", "gallery.portrait"],
+      ["assets/site/models/alicia-1.jpg", "gallery.editorial", "gallery.form"],
+      ["assets/site/models/florine-4.jpg", "gallery.editorial", "gallery.closeup"],
+      ["assets/site/models/jenna-1.jpg", "gallery.editorial", "gallery.styling"],
+      ["assets/site/models/sosthene-5.jpg", "gallery.editorial", "gallery.colour"],
+      ["assets/site/models/tristan-1.jpg", "gallery.editorial", "gallery.detail"]
     ],
     film: {
-      src: "assets/films/florine-eveningwear.mp4",
-      poster: "photo-1525507119028-ed4c629a60a3",
+      src: film("florine-eveningwear"),
+      poster: "assets/site/models/florine-5.jpg",
       captionKey: "gallery.florineFilm"
     }
   },
@@ -251,18 +292,18 @@ const portfolios = [
     title: "Commercial",
     labelKey: "portfolio.labelCampaign",
     descriptionKey: "portfolio.commercialCopy",
-    image: "photo-1483985988355-763728e1935b",
+    imageSrc: "assets/site/models/fernando-1.jpg",
     gallery: [
-      ["photo-1483985988355-763728e1935b", "gallery.campaign", "gallery.together"],
-      ["photo-1529139574466-a303027c1d8b", "gallery.campaign", "gallery.expression"],
-      ["photo-1509631179647-0177331693ae", "gallery.campaign", "gallery.wardrobe"],
-      ["photo-1525507119028-ed4c629a60a3", "gallery.campaign", "gallery.texture"],
-      ["photo-1515886657613-9f3515b0c78f", "gallery.campaign", "gallery.portrait"],
-      ["photo-1524504388940-b1c1722653e1", "gallery.campaign", "gallery.story"]
+      ["assets/site/models/fernando-1.jpg", "gallery.campaign", "gallery.together"],
+      ["assets/site/models/linda-1.jpg", "gallery.campaign", "gallery.expression"],
+      ["assets/site/models/sosthene-11.jpg", "gallery.campaign", "gallery.wardrobe"],
+      ["assets/site/models/alicia-4.jpg", "gallery.campaign", "gallery.texture"],
+      ["assets/site/models/albina-15.jpg", "gallery.campaign", "gallery.portrait"],
+      ["assets/site/models/orna-1.jpg", "gallery.campaign", "gallery.story"]
     ],
     film: {
-      src: "assets/films/albina-feature.mp4",
-      poster: "photo-1483985988355-763728e1935b",
+      src: film("albina-feature"),
+      poster: "assets/site/models/albina-2.jpg",
       captionKey: "gallery.albinaFilm"
     }
   },
@@ -271,14 +312,14 @@ const portfolios = [
     title: "Cosmetics & Beauty",
     labelKey: "portfolio.labelBeauty",
     descriptionKey: "portfolio.beautyCopy",
-    image: "photo-1524504388940-b1c1722653e1",
+    imageSrc: "assets/site/models/alicia-1.jpg",
     gallery: [
-      ["photo-1524504388940-b1c1722653e1", "gallery.beauty", "gallery.skin"],
-      ["photo-1534528741775-53994a69daeb", "gallery.beauty", "gallery.portrait"],
-      ["photo-1515886657613-9f3515b0c78f", "gallery.beauty", "gallery.colour"],
-      ["photo-1529139574466-a303027c1d8b", "gallery.beauty", "gallery.light"],
-      ["photo-1509631179647-0177331693ae", "gallery.beauty", "gallery.form"],
-      ["photo-1525507119028-ed4c629a60a3", "gallery.beauty", "gallery.detail"]
+      ["assets/site/models/alicia-1.jpg", "gallery.beauty", "gallery.skin"],
+      ["assets/site/models/albina-10.jpg", "gallery.beauty", "gallery.portrait"],
+      ["assets/site/models/jenna-2.jpg", "gallery.beauty", "gallery.colour"],
+      ["assets/site/models/orna-3.jpg", "gallery.beauty", "gallery.light"],
+      ["assets/site/models/keira-5.jpg", "gallery.beauty", "gallery.form"],
+      ["assets/site/models/linda-8.jpg", "gallery.beauty", "gallery.detail"]
     ]
   }
 ];
@@ -332,14 +373,23 @@ const esc = (value) =>
 
 function renderModel(model, index) {
   const name = esc(model.name);
+  const media = model.mediaKey ? modelMedia[model.mediaKey] : null;
+  const photo = media?.photos[0];
+  const imageSrc = media?.cover || photo || media?.poster || model.src || image(model.image, 760);
+  const hasApprovedImage = Boolean(photo || media?.poster || model.src);
   const cardLink = model.compCard
     ? `<a class="pdf-link" href="${esc(model.compCard)}" target="_blank" rel="noreferrer">${t("model.openCard")} <span aria-hidden="true">↗</span></a>`
-    : `<p class="model-code">${t("model.pending")}</p><p>${t("model.pendingCopy")}</p><a class="text-link" href="#join" data-interest="model">${t("model.enquire")} <span aria-hidden="true">↗</span></a>`;
+    : media && (media.photos.length || media.films.length)
+      ? `<p class="model-code">${t("model.pending")}</p><a class="text-link" href="#join" data-interest="model">${t("model.enquire")} <span aria-hidden="true">↗</span></a>`
+      : `<p class="model-code">${t("model.pending")}</p><p>${t("model.pendingCopy")}</p><a class="text-link" href="#join" data-interest="model">${t("model.enquire")} <span aria-hidden="true">↗</span></a>`;
+  const galleryLink = media && (media.photos.length || media.films.length)
+    ? `<button class="pdf-link model-gallery-open" type="button" data-model-gallery="${index}">${t("model.viewGallery")} <span aria-hidden="true">↗</span></button>`
+    : "";
   return `
     <article class="model-card">
       <div class="model-card-inner">
         <div class="model-face model-front">
-          <img src="${esc(model.src || image(model.image, 760))}" alt="${model.src ? t("model.approvedAlt", { name }) : t("model.placeholderAlt", { name })}" loading="lazy">
+          <img src="${esc(imageSrc)}" alt="${hasApprovedImage ? t("model.approvedAlt", { name }) : t("model.placeholderAlt", { name })}" loading="lazy">
           <div class="model-caption"><div><p>EOEX / ${t("model.kind")}</p><h3>${name}</h3></div><span class="flip-cue" aria-hidden="true">↗</span></div>
           <button class="flip-trigger flip-cue" type="button" aria-label="${t("model.cardAria", { name })}" aria-expanded="false">↗</button>
         </div>
@@ -349,7 +399,8 @@ function renderModel(model, index) {
           <p class="back-brand">EOEX AGENCY</p>
           <p class="model-code">${t("model.profile")} ${String(index + 1).padStart(2, "0")}</p>
           <h3>${name}</h3>
-          <p>${model.compCard ? t("model.compCardIntro") : t("model.pendingCopy")}</p>
+          <p>${media && (media.photos.length || media.films.length) ? t("model.galleryIntro") : model.compCard ? t("model.compCardIntro") : t("model.pendingCopy")}</p>
+          ${galleryLink}
           ${cardLink}
           <button class="flip-back" type="button" aria-label="${t("model.returnAria", { name })}" aria-expanded="true">${t("model.back")}</button>
           </div>
@@ -371,7 +422,7 @@ function renderPortfolios() {
     <article class="portfolio-card">
       <div class="portfolio-card-inner">
         <div class="portfolio-face portfolio-front">
-          <img src="${image(portfolio.image, 1150)}" alt="" loading="lazy">
+          <img src="${esc(portfolio.imageSrc || image(portfolio.image, 1150))}" alt="" loading="lazy">
           <div class="portfolio-card-content">
             <p class="eyebrow">${t(portfolio.labelKey)}</p>
             <h3>${t(`portfolio.${portfolio.key}`)}</h3>
@@ -436,7 +487,8 @@ function renderLocalizedContent() {
   renderModels();
   renderPortfolios();
   renderOpportunities();
-  if (activeGalleryIndex !== null && galleryDialog.open) renderGallery(portfolios[activeGalleryIndex]);
+  if (activeModelGalleryIndex !== null && galleryDialog.open) renderModelGallery(models[activeModelGalleryIndex]);
+  else if (activeGalleryIndex !== null && galleryDialog.open) renderGallery(portfolios[activeGalleryIndex]);
 }
 
 const menuToggle = document.querySelector(".menu-toggle");
@@ -518,20 +570,21 @@ const galleryDialog = document.querySelector("#gallery-dialog");
 const galleryGrid = document.querySelector("#gallery-grid");
 const galleryTitle = document.querySelector("#gallery-title");
 let activeGalleryIndex = null;
+let activeModelGalleryIndex = null;
 function renderGallery(portfolio) {
   galleryTitle.textContent = t(`portfolio.${portfolio.key}`);
   const stills = portfolio.gallery.map(([photo, category, detail]) => {
     const caption = `${t(category)} / ${t(detail)}`;
     return `
       <figure class="gallery-item">
-        <img src="${image(photo, 850)}" alt="${esc(caption)} — ${esc(t("gallery.note"))}" loading="lazy">
+        <img src="${esc(photo)}" alt="${esc(caption)} — ${esc(t("gallery.note"))}" loading="lazy">
         <figcaption>${esc(caption)}</figcaption>
       </figure>
     `;
   }).join("");
   const film = portfolio.film ? `
     <figure class="gallery-item gallery-video">
-      <video controls preload="none" playsinline poster="${image(portfolio.film.poster, 850)}">
+      <video controls preload="none" playsinline poster="${esc(portfolio.film.poster)}">
         <source src="${esc(portfolio.film.src)}" type="video/mp4">
         ${t("gallery.filmUnsupported")}
       </video>
@@ -540,16 +593,47 @@ function renderGallery(portfolio) {
   ` : "";
   galleryGrid.innerHTML = `${stills}${film}`;
 }
+function renderModelGallery(model) {
+  const media = modelMedia[model.mediaKey];
+  const name = esc(model.name);
+  galleryTitle.textContent = t("gallery.modelTitle", { name });
+  const stills = media.photos.map((photo) => `
+    <figure class="gallery-item">
+      <img src="${esc(photo)}" alt="${esc(t("model.approvedAlt", { name }))}" loading="lazy">
+      <figcaption>${esc(t("gallery.modelPhoto", { name }))}</figcaption>
+    </figure>
+  `).join("");
+  const films = media.films.map((source) => `
+    <figure class="gallery-item gallery-video">
+      <video controls preload="none" playsinline${media.photos[0] || media.poster ? ` poster="${esc(media.photos[0] || media.poster)}"` : ""} aria-label="${esc(t("gallery.modelFilm", { name }))}">
+        <source src="${esc(source)}" type="video/mp4">
+        ${t("gallery.filmUnsupported")}
+      </video>
+      <figcaption>${esc(t("gallery.modelFilm", { name }))}</figcaption>
+    </figure>
+  `).join("");
+  galleryGrid.innerHTML = `${stills}${films}`;
+}
 document.querySelector("#portfolio-grid").addEventListener("click", (event) => {
   const button = event.target.closest("[data-gallery]");
   if (!button) return;
   activeGalleryIndex = Number(button.dataset.gallery);
+  activeModelGalleryIndex = null;
   renderGallery(portfolios[activeGalleryIndex]);
+  galleryDialog.showModal();
+});
+document.querySelector(".models").addEventListener("click", (event) => {
+  const button = event.target.closest("[data-model-gallery]");
+  if (!button) return;
+  activeModelGalleryIndex = Number(button.dataset.modelGallery);
+  activeGalleryIndex = null;
+  renderModelGallery(models[activeModelGalleryIndex]);
   galleryDialog.showModal();
 });
 document.querySelector(".dialog-close").addEventListener("click", () => galleryDialog.close());
 galleryDialog.addEventListener("close", () => {
   activeGalleryIndex = null;
+  activeModelGalleryIndex = null;
 });
 galleryDialog.addEventListener("click", (event) => {
   if (event.target === galleryDialog) galleryDialog.close();

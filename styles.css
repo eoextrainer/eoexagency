@@ -226,7 +226,8 @@ h1 em, h2 em { color: var(--gold); font-weight: 400; }
 .model-back .model-code { margin: 0 0 13px; color: #d8c09b; font-size: 8px; letter-spacing: .14em; text-transform: uppercase; }
 .model-back .text-link { color: var(--gold-light); border-color: rgba(198,168,124,.6); }
 .model-back .flip-back { margin-top: 18px; padding: 6px 0; border: 0; background: transparent; color: rgba(255,255,255,.62); font-size: 8px; letter-spacing: .15em; text-transform: uppercase; cursor: pointer; }
-.pdf-link { display: inline-flex; align-items: center; gap: 9px; padding: 12px 15px; border: 1px solid rgba(198,168,124,.64); color: var(--gold-light); font-size: 8px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
+.pdf-link { display: inline-flex; align-items: center; gap: 9px; padding: 12px 15px; border: 1px solid rgba(198,168,124,.64); background: transparent; color: var(--gold-light); font-size: 8px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; cursor: pointer; }
+.model-gallery-open { margin-bottom: 11px; }
 .pdf-link:hover, .pdf-link:focus-visible { background: var(--gold); color: var(--black); }
 .model-card:focus-within { outline: 2px solid #b38e5b; outline-offset: 4px; }
 
