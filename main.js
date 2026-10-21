@@ -542,7 +542,6 @@ const reducedMotionPreference = window.matchMedia("(prefers-reduced-motion: redu
 let heroVideoIndex = 0;
 let heroVideoPlaying = !reducedMotionPreference.matches;
 let heroVisible = !joinPage.hidden;
-let heroRotationTimer = null;
 
 function updateHeroVideoControls() {
   heroVideoCount.textContent = `${String(heroVideoIndex + 1).padStart(2, "0")} / ${String(heroVideos.length).padStart(2, "0")}`;
@@ -551,7 +550,6 @@ function updateHeroVideoControls() {
 }
 
 function syncHeroVideoPlayback() {
-  window.clearInterval(heroRotationTimer);
   if (!heroVideoPlaying || !heroVisible || document.hidden) {
     heroVideo.pause();
     updateHeroVideoControls();
@@ -561,11 +559,9 @@ function syncHeroVideoPlayback() {
   heroVideo.play().catch((error) => {
     if (error.name === "AbortError") return;
     console.error("The home-page video could not start playing.", error);
-    window.clearInterval(heroRotationTimer);
     heroVideoPlaying = false;
     updateHeroVideoControls();
   });
-  heroRotationTimer = window.setInterval(() => showHeroVideo(heroVideoIndex + 1), 12000);
   updateHeroVideoControls();
 }
 
@@ -581,6 +577,9 @@ function showHeroVideo(index) {
 
 heroVideo.addEventListener("error", () => {
   console.error("The home-page video asset failed to load.", heroVideo.currentSrc);
+});
+heroVideo.addEventListener("ended", () => {
+  if (heroVideoPlaying && heroVisible && !document.hidden) showHeroVideo(heroVideoIndex + 1);
 });
 heroVideoToggle.addEventListener("click", () => {
   heroVideoPlaying = !heroVideoPlaying;
