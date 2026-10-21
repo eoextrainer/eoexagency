@@ -203,7 +203,15 @@ const photosFor = (slug, count) =>
   Array.from({ length: count }, (_, index) => `assets/site/models/${slug}-${index + 1}.jpg`);
 const film = (slug) => `assets/site/films/${slug}.mp4`;
 const modelMedia = {
-  albina: { photos: photosFor("albina", 20), films: [film("albina-feature")], cover: "assets/site/models/albina-2.jpg" },
+  albina: {
+    photos: photosFor("albina", 20),
+    films: [
+      film("albina-feature"),
+      "assets/site/runway/albina-mariage-1.mp4",
+      "assets/site/runway/albina-mariage-2.mp4"
+    ],
+    cover: "assets/site/models/albina-2.jpg"
+  },
   alicia: { photos: photosFor("alicia", 8), films: [] },
   conan: { photos: [], films: [film("conan"), film("conan-2")], poster: "assets/site/models/conan-poster.jpg" },
   henri: { photos: ["assets/site/models/henri-card.jpg"], films: [] },
@@ -214,7 +222,9 @@ const modelMedia = {
     films: [
       film("florine-minteh-1"), film("florine-robe-1"), film("florine-robe-2"),
       film("florine-mariage-2"), film("florine-eveningwear"), film("florine-rfw26"),
-      film("florine"), ...Array.from({ length: 10 }, (_, index) => film(`florine-${index + 1}`))
+      film("florine"), ...Array.from({ length: 10 }, (_, index) => film(`florine-${index + 1}`)),
+      "assets/site/runway/florine-mariage-1.mp4",
+      "assets/site/runway/florine-mariage-2.mp4"
     ]
   },
   jenna: { photos: photosFor("jenna", 7), films: [] },
@@ -224,7 +234,11 @@ const modelMedia = {
   patrycja: { photos: photosFor("patrycja", 2), films: [] },
   sosthene: {
     photos: photosFor("sosthene", 18),
-    films: [film("sosthene"), film("sosthene-1"), film("sosthene-2"), film("sosthene-3"), film("sosthene-4")]
+    films: [
+      film("sosthene"), film("sosthene-1"), film("sosthene-2"), film("sosthene-3"), film("sosthene-4"),
+      "assets/site/runway/sosthene-minteh-1.mp4",
+      "assets/site/runway/sosthene-minteh-2.mp4"
+    ]
   },
   tristan: { photos: photosFor("tristan", 2), films: [] }
 };
@@ -239,7 +253,7 @@ const models = [
   { name: "Fernando", mediaKey: "fernando", compCard: "assets/comp-cards/EOEX-COMPCARD-FernandoB.pdf" },
   { name: "Alicia", mediaKey: "alicia", compCard: "assets/comp-cards/EOEX-COMPCARD-AliciaV.pdf" },
   { name: "Henri", mediaKey: "henri", compCard: "assets/comp-cards/EOEX-COMPCARD-HenriD.pdf" },
-  { name: "Keira", mediaKey: "keira" },
+  { name: "Keira", mediaKey: "keira", compCard: "assets/comp-cards/EOEX-COMPCARD-KeiraC.pdf" },
   { name: "Patrycja", mediaKey: "patrycja", compCard: "assets/comp-cards/EOEX-COMPCARD-Patrycja.pdf" },
   { name: "Ornella", mediaKey: "ornella", compCard: "assets/comp-cards/EOEX-COMPCARD-OrnellaB.pdf" },
   { name: "Linda", mediaKey: "linda", compCard: "assets/comp-cards/EOEX-COMPCARD-LindaC.pdf" },
@@ -261,6 +275,17 @@ const portfolios = [
       ["assets/site/models/florine-6.jpg", "gallery.runway", "gallery.collection"],
       ["assets/site/models/florine-7.jpg", "gallery.runway", "gallery.finale"]
     ],
+    films: [
+      { src: "assets/site/runway/mfw26-backstage.mp4", poster: "assets/site/runway/posters/mfw26-backstage.jpg", captionKey: "gallery.florineRunway" },
+      { src: "assets/site/runway/albina-mariage-1.mp4", poster: "assets/site/runway/posters/albina-mariage-1.jpg", captionKey: "gallery.runway" },
+      { src: "assets/site/runway/albina-mariage-2.mp4", poster: "assets/site/runway/posters/albina-mariage-2.jpg", captionKey: "gallery.runway" },
+      { src: "assets/site/runway/catia-robe-1.mp4", poster: "assets/site/runway/posters/catia-robe-1.jpg", captionKey: "gallery.runway" },
+      { src: "assets/site/runway/catia-mariage-1.mp4", poster: "assets/site/runway/posters/catia-mariage-1.jpg", captionKey: "gallery.runway" },
+      { src: "assets/site/runway/florine-mariage-1.mp4", poster: "assets/site/runway/posters/florine-mariage-1.jpg", captionKey: "gallery.florineRunway" },
+      { src: "assets/site/runway/florine-mariage-2.mp4", poster: "assets/site/runway/posters/florine-mariage-2.jpg", captionKey: "gallery.florineRunway" },
+      { src: "assets/site/runway/sosthene-minteh-1.mp4", poster: "assets/site/runway/posters/sosthene-minteh-1.jpg", captionKey: "gallery.runway" },
+      { src: "assets/site/runway/sosthene-minteh-2.mp4", poster: "assets/site/runway/posters/sosthene-minteh-2.jpg", captionKey: "gallery.runway" }
+    ],
     film: {
       src: film("florine-rfw26"),
       poster: "assets/site/models/florine-2.jpg",
@@ -272,8 +297,15 @@ const portfolios = [
     title: "Editorial",
     labelKey: "portfolio.labelImage",
     descriptionKey: "portfolio.editorialCopy",
-    imageSrc: "assets/site/models/albina-2.jpg",
+    imageSrc: "assets/site/editorial/editorial-1.jpg",
     gallery: [
+      ["assets/site/editorial/editorial-1.jpg", "gallery.editorial", "gallery.portrait"],
+      ["assets/site/editorial/editorial-2.jpg", "gallery.editorial", "gallery.form"],
+      ["assets/site/editorial/editorial-3.jpg", "gallery.editorial", "gallery.closeup"],
+      ["assets/site/editorial/editorial-4.jpg", "gallery.editorial", "gallery.styling"],
+      ["assets/site/editorial/editorial-5.jpg", "gallery.editorial", "gallery.colour"],
+      ["assets/site/editorial/editorial-6.jpg", "gallery.editorial", "gallery.detail"],
+      ["assets/site/editorial/editorial-7.jpg", "gallery.editorial", "gallery.portrait"],
       ["assets/site/models/albina-2.jpg", "gallery.editorial", "gallery.portrait"],
       ["assets/site/models/alicia-1.jpg", "gallery.editorial", "gallery.form"],
       ["assets/site/models/florine-4.jpg", "gallery.editorial", "gallery.closeup"],
@@ -293,6 +325,10 @@ const portfolios = [
     labelKey: "portfolio.labelCampaign",
     descriptionKey: "portfolio.commercialCopy",
     imageSrc: "assets/site/models/fernando-1.jpg",
+    films: [
+      { src: "assets/site/commercial/perfume.mp4", poster: "assets/site/commercial/posters/perfume.jpg", captionKey: "gallery.campaign" },
+      { src: "assets/site/commercial/sosthene-campaign.mp4", poster: "assets/site/commercial/posters/sosthene-campaign.jpg", captionKey: "gallery.campaign" }
+    ],
     gallery: [
       ["assets/site/models/fernando-1.jpg", "gallery.campaign", "gallery.together"],
       ["assets/site/models/linda-1.jpg", "gallery.campaign", "gallery.expression"],
@@ -312,8 +348,14 @@ const portfolios = [
     title: "Cosmetics & Beauty",
     labelKey: "portfolio.labelBeauty",
     descriptionKey: "portfolio.beautyCopy",
-    imageSrc: "assets/site/models/alicia-1.jpg",
+    imageSrc: "assets/site/beauty/beauty-1.jpg",
     gallery: [
+      ["assets/site/beauty/beauty-1.jpg", "gallery.beauty", "gallery.skin"],
+      ["assets/site/beauty/beauty-2.jpg", "gallery.beauty", "gallery.portrait"],
+      ["assets/site/beauty/beauty-3.jpg", "gallery.beauty", "gallery.colour"],
+      ["assets/site/beauty/beauty-4.jpg", "gallery.beauty", "gallery.light"],
+      ["assets/site/beauty/beauty-5.jpg", "gallery.beauty", "gallery.form"],
+      ["assets/site/beauty/beauty-6.jpg", "gallery.beauty", "gallery.detail"],
       ["assets/site/models/alicia-1.jpg", "gallery.beauty", "gallery.skin"],
       ["assets/site/models/albina-10.jpg", "gallery.beauty", "gallery.portrait"],
       ["assets/site/models/jenna-2.jpg", "gallery.beauty", "gallery.colour"],
@@ -582,16 +624,16 @@ function renderGallery(portfolio) {
       </figure>
     `;
   }).join("");
-  const film = portfolio.film ? `
+  const films = [...(portfolio.films || []), ...(portfolio.film ? [portfolio.film] : [])].map((film) => `
     <figure class="gallery-item gallery-video">
-      <video controls preload="none" playsinline poster="${esc(portfolio.film.poster)}">
-        <source src="${esc(portfolio.film.src)}" type="video/mp4">
+      <video controls preload="none" playsinline${film.poster ? ` poster="${esc(film.poster)}"` : ""}>
+        <source src="${esc(film.src)}" type="video/mp4">
         ${t("gallery.filmUnsupported")}
       </video>
-      <figcaption>${t(portfolio.film.captionKey)}</figcaption>
+      <figcaption>${t(film.captionKey)}</figcaption>
     </figure>
-  ` : "";
-  galleryGrid.innerHTML = `${stills}${film}`;
+  `).join("");
+  galleryGrid.innerHTML = `${stills}${films}`;
 }
 function renderModelGallery(model) {
   const media = modelMedia[model.mediaKey];

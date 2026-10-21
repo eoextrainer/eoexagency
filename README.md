@@ -17,9 +17,11 @@ server. No build step or dependency installation is required.
 
 - The model roster and opportunity listings follow the supplied brief.
 - Supplied model photos and films are matched to profiles by filename and
-  appear in the model and portfolio galleries. Profiles without matching
-  assets retain illustrative portraits until approved material is provided.
-- Comp-card PDFs are available for 11 profiles. Profiles still awaiting a
+  appear in the model and portfolio galleries. New editorial and beauty
+  imagery, plus runway and commercial films, appear in their respective
+  portfolio galleries. Profiles without matching assets retain illustrative
+  portraits until approved material is provided.
+- Comp-card PDFs are available for 12 profiles. Profiles still awaiting a
   comp card include an enquiry link and any available photo or film gallery.
 - The JOIN US form validates the inquiry and downloads a local copy. It does
   not send or store personal information; connect an approved form service
