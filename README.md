@@ -4,8 +4,8 @@ A static, responsive agency website designed for GitHub Pages.
 
 ## Preview
 
-Open `site/index.html` directly, or serve the `site` directory with any static
-web server. No build step or dependency installation is required.
+Open `index.html` directly, or serve the repository root with any static web
+server. No build step or dependency installation is required.
 
 ## Content notes
 
@@ -20,5 +20,5 @@ web server. No build step or dependency installation is required.
 
 ## GitHub Pages
 
-The workflow in `.github/workflows/deploy-pages.yml` publishes `site/` when
-changes are pushed to `main` and enables GitHub Pages for the repository.
+The workflow in `.github/workflows/deploy-pages.yml` publishes the repository
+root when changes are pushed to `main`.
