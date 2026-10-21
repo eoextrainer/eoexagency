@@ -238,6 +238,15 @@ const modelMedia = {
   tristan: { photos: photosFor("tristan", 2), films: [] }
 };
 
+const runwayFilms = Array.from({ length: 75 }, (_, index) => {
+  const id = String(index + 1).padStart(3, "0");
+  return {
+    src: `assets/site/runway/runway-${id}.mp4`,
+    poster: `assets/site/runway/posters/runway-${id}.jpg`,
+    captionKey: "gallery.runway"
+  };
+});
+
 const models = [
   { name: "Albina", mediaKey: "albina", compCard: "assets/comp-cards/albina.pdf" },
   { name: "Tristan", mediaKey: "tristan" },
@@ -263,16 +272,7 @@ const portfolios = [
     descriptionKey: "portfolio.runwaysCopy",
     imageSrc: "assets/site/covers/runway.jpg",
     gallery: [],
-    films: [
-      { src: "assets/site/runway/albina-mariage-1.mp4", poster: "assets/site/runway/posters/albina-mariage-1.jpg", captionKey: "gallery.runway" },
-      { src: "assets/site/runway/albina-mariage-2.mp4", poster: "assets/site/runway/posters/albina-mariage-2.jpg", captionKey: "gallery.runway" },
-      { src: "assets/site/runway/catia-robe-1.mp4", poster: "assets/site/runway/posters/catia-robe-1.jpg", captionKey: "gallery.runway" },
-      { src: "assets/site/runway/catia-mariage-1.mp4", poster: "assets/site/runway/posters/catia-mariage-1.jpg", captionKey: "gallery.runway" },
-      { src: "assets/site/runway/florine-mariage-1.mp4", poster: "assets/site/runway/posters/florine-mariage-1.jpg", captionKey: "gallery.florineRunway" },
-      { src: "assets/site/runway/florine-mariage-2.mp4", poster: "assets/site/runway/posters/florine-mariage-2.jpg", captionKey: "gallery.florineRunway" },
-      { src: "assets/site/runway/sosthene-minteh-1.mp4", poster: "assets/site/runway/posters/sosthene-minteh-1.jpg", captionKey: "gallery.runway" },
-      { src: "assets/site/runway/sosthene-minteh-2.mp4", poster: "assets/site/runway/posters/sosthene-minteh-2.jpg", captionKey: "gallery.runway" }
-    ]
+    films: runwayFilms
   },
   {
     key: "editorial",
@@ -425,10 +425,8 @@ function renderPortfolios() {
           <button class="flip-trigger flip-cue" type="button" aria-label="${t("portfolio.turnAria", { title: t(`portfolio.${portfolio.key}`) })}" aria-expanded="false">↗</button>
         </div>
         <div class="portfolio-face portfolio-back">
-          <p class="eyebrow">${t(portfolio.labelKey)}</p>
-          <h3>${t(`portfolio.${portfolio.key}`)}</h3>
           <p>${t(portfolio.descriptionKey)}</p>
-          <button type="button" data-gallery="${index}">${t("portfolio.exploreGallery")} <span aria-hidden="true">↗</span></button>
+          <button type="button" data-gallery="${index}" aria-label="${t("portfolio.exploreGallery")} — ${t(`portfolio.${portfolio.key}`)}">${t("portfolio.exploreGallery")} <span aria-hidden="true">↗</span></button>
         </div>
       </div>
     </article>

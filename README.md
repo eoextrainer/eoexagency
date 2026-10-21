@@ -21,7 +21,8 @@ server. No build step or dependency installation is required.
   its matching `assets/beauty/`, `assets/editorial/`, `assets/runway/`, or
   `assets/commercial/` folder. The home hero carousel uses only videos from
   `assets/hero-carousel/`; the separate `assets/covers/` images are used for
-  portfolio tile covers.
+  portfolio tile covers. All 75 videos from `assets/runway/` are optimized
+  and included in the runway gallery.
 - Profiles without matching assets retain illustrative portraits until
   approved material is provided.
 - Comp-card PDFs are available for 12 profiles. Profiles still awaiting a
